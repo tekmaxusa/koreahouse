@@ -1,0 +1,852 @@
+{
+  "count": 121,
+  "items": [
+    {
+      "name": "Most Ordered",
+      "url": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/a3bf37ea-a043-4a96-b3b7-d152b7377706-retina-large-jpeg",
+      "description": "The most commonly ordered items and dishes from this store",
+      "price": "$$22.50",
+      "category": null
+    },
+    {
+      "name": "#69. Soondubu Jjigae",
+      "url": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/a3bf37ea-a043-4a96-b3b7-d152b7377706-retina-large-jpeg",
+      "description": "Spicy. Spicy red chili stew with silky tofu (choice of vegetarian, beef, or seafood)",
+      "price": "$$22.50",
+      "category": null
+    },
+    {
+      "name": "#85. L.A. Galbi",
+      "url": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/d01613cf-1b3a-498e-acb5-dd79bdd07dd9-retina-large-jpeg",
+      "description": "Marinated black Angus beef short ribs cut across the bone(three bones).",
+      "price": "$$36.99",
+      "category": null
+    },
+    {
+      "name": "#70. Kimchi Jjigae",
+      "url": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/ugc/181df91f-c9b4-4b61-be9b-87585036dfb0.jpg",
+      "description": "Prime rib eye sliced marinated beef in special sweet sake sauce",
+      "price": "$$21.25",
+      "category": null
+    },
+    {
+      "name": "#81. Bulgogi",
+      "url": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/bc11fda7-1547-478c-9147-f3926b5034ee-retina-large.jpg",
+      "description": "Prime rib eye sliced marinated beef in special sweet sake sauce",
+      "price": "$$35.00",
+      "category": null
+    },
+    {
+      "name": "#33 Haemul Pajun",
+      "url": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/08da65b0-e27f-4f90-a6b5-e7452b8dbdaa-retina-large-jpeg",
+      "description": "Spicy. Chunks of short ribs in a spicy broth.",
+      "price": "$$22.50",
+      "category": null
+    },
+    {
+      "name": "#67. Galbisal Gukbap",
+      "url": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/fa204732-61ad-4a68-b9c2-14dce1a9eae8-retina-large-jpeg",
+      "description": "Spicy. Chunks of short ribs in a spicy broth.",
+      "price": "$$23.75",
+      "category": null
+    },
+    {
+      "name": "#55. Bibimbap",
+      "url": "https://img.cdn4dd.com/p/fit=contain,width=1200,height=672,format=auto/media/yelp/50330ee1-9cfb-4882-ab5e-a0e8fe1b3832.jpg",
+      "description": "",
+      "price": "$$22.50",
+      "category": null
+    },
+    {
+      "name": "#35. Japchae",
+      "url": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/3ac0a6cb-c858-43a6-b920-bbee8907829e-retina-large.jpg",
+      "description": "Beef bone soup with beef brisket, beef tendon, and noodles",
+      "price": "$$22.50",
+      "category": null
+    },
+    {
+      "name": "#64. Sullung Tang",
+      "url": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/ugc/5383aee2-c784-4826-a8ab-46954b16cd42.jpg",
+      "description": "Beef bone soup with beef brisket, beef tendon, and noodles",
+      "price": "$$22.50",
+      "category": null
+    },
+    {
+      "name": "#60. Galbi Dolsot Bibimbap",
+      "url": "https://img.cdn4dd.com/p/fit=contain,width=1200,height=672,format=auto/media/yelp/69691fb2-8592-40d3-80ab-00f857068203.jpeg",
+      "description": "Bibimbap cooked with galbi and served in a hot stone pot",
+      "price": "$$24.99",
+      "category": null
+    },
+    {
+      "name": "#72. Duk Mandu Guk",
+      "url": null,
+      "description": "Thinly sliced unseasoned prime brisket.",
+      "price": "$$21.25",
+      "category": null
+    },
+    {
+      "name": "#84. Chadol- Bakee",
+      "url": "https://img.cdn4dd.com/p/fit=contain,width=1200,height=672,format=auto/media/yelp/98dc28bc-94da-4804-bb73-5dc492dd8b45.jpg",
+      "description": "Thinly sliced unseasoned prime brisket.",
+      "price": "$$34.99",
+      "category": null
+    },
+    {
+      "name": "House Sushi Rolls (Mon-Sat Dinner, Mon-Fri Lunch Only)",
+      "url": "https://img.cdn4dd.com/p/fit=contain,width=1200,height=672,format=auto/media/yelp/98dc28bc-94da-4804-bb73-5dc492dd8b45.jpg",
+      "description": "",
+      "price": "$$14.00",
+      "category": null
+    },
+    {
+      "name": "Tuna Roll",
+      "url": "https://img.cdn4dd.com/p/fit=contain,width=1200,height=672,format=auto/media/yelp/98dc28bc-94da-4804-bb73-5dc492dd8b45.jpg",
+      "description": "",
+      "price": "$$14.00",
+      "category": null
+    },
+    {
+      "name": "Salmon Avocado Roll",
+      "url": null,
+      "description": "",
+      "price": "$$15.00",
+      "category": null
+    },
+    {
+      "name": "Spicy Tuna Roll",
+      "url": null,
+      "description": "",
+      "price": "$$15.00",
+      "category": null
+    },
+    {
+      "name": "Spider Roll",
+      "url": null,
+      "description": "Soft Shell crab tempura, cucumber, avocado, spicy mayo",
+      "price": "$$15.00",
+      "category": null
+    },
+    {
+      "name": "Philadelphia Roll",
+      "url": null,
+      "description": "smoked salmon, cream cheese, avocado, cucumber",
+      "price": "$$14.00",
+      "category": null
+    },
+    {
+      "name": "Salmon Roll",
+      "url": null,
+      "description": "Fresh salmon rolled with rice and seaweed, a classic sushi delight.",
+      "price": "$$14.00",
+      "category": null
+    },
+    {
+      "name": "Avocado Roll",
+      "url": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/19ac49e4-f750-4385-836b-c9310be3b14e-retina-large.jpg",
+      "description": "Fresh avocado slices rolled in seaweed and sushi rice, a vegetarian delight.",
+      "price": "$$11.25",
+      "category": null
+    },
+    {
+      "name": "California Roll",
+      "url": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/19ac49e4-f750-4385-836b-c9310be3b14e-retina-large.jpg",
+      "description": "Crab stick, avocado, and cucumber wrapped in seasoned sushi rice and seaweed.",
+      "price": "$$12.50",
+      "category": null
+    },
+    {
+      "name": "Cucumber Roll",
+      "url": null,
+      "description": "Crisp cucumber wrapped in seaweed and rice, a refreshing vegetarian sushi option.",
+      "price": "$$9.99",
+      "category": null
+    },
+    {
+      "name": "Eel Roll",
+      "url": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/b3a7716d-1eac-4489-8221-fdd522c7ca36-retina-large.jpg",
+      "description": "",
+      "price": "$$14.00",
+      "category": null
+    },
+    {
+      "name": "Shrimp Tempura Roll",
+      "url": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/b3a7716d-1eac-4489-8221-fdd522c7ca36-retina-large.jpg",
+      "description": "Crispy shrimp tempura wrapped in sushi rice, topped with drizzles of spicy mayo and eel sauce.",
+      "price": "$$14.00",
+      "category": null
+    },
+    {
+      "name": "Spicy Salmon Roll",
+      "url": null,
+      "description": "Freshly sliced salmon with a fiery kick, wrapped in seasoned sushi rice.",
+      "price": "$$14.00",
+      "category": null
+    },
+    {
+      "name": "Veggie Roll",
+      "url": null,
+      "description": "",
+      "price": "$$11.25",
+      "category": null
+    },
+    {
+      "name": "Yellowtail Roll",
+      "url": null,
+      "description": "Succulent Yellowtail in a Crispy Seaweed Wrap, Enhanced with Subtle Rice Flavors",
+      "price": "$$14.00",
+      "category": null
+    },
+    {
+      "name": "Scorpion Roll",
+      "url": null,
+      "description": "Spicy Tuna, cucumber roll wrapped with soy paper, tuna salmon, yellowtail, white tuna, avocado, and shrimp on top",
+      "price": "$$18.00",
+      "category": null
+    },
+    {
+      "name": "Veggie Tempura Roll",
+      "url": null,
+      "description": "",
+      "price": "$$11.25",
+      "category": null
+    },
+    {
+      "name": "Special Sushi Rolls (Mon-Sat Dinner, Mon-Fri Lunch Only)",
+      "url": null,
+      "description": "",
+      "price": "$$18.00",
+      "category": null
+    },
+    {
+      "name": "Sunshine Roll",
+      "url": null,
+      "description": "Spicy tuna, cucumber roll topped with fresh salmon and avocado ",
+      "price": "$$18.00",
+      "category": null
+    },
+    {
+      "name": "Caterpillar Roll",
+      "url": null,
+      "description": "Eel, cucumber, mountain carrot roll topped with avocado and eel sauce ",
+      "price": "$$17.00",
+      "category": null
+    },
+    {
+      "name": "Panic Roll",
+      "url": null,
+      "description": "Spicy tuna roll topped with spicy crab, jalapeno, and hot sauce ",
+      "price": "$$17.00",
+      "category": null
+    },
+    {
+      "name": "Alaska Roll",
+      "url": null,
+      "description": "california roll topped with fresh salmon, avocado",
+      "price": "$$18.00",
+      "category": null
+    },
+    {
+      "name": "Big Mama Roll",
+      "url": null,
+      "description": "Soft shell crab, cream cheese, cucumber roll topped with spicy tuna, crabmeat, and crunch flakes served with spicy mayo and eel sauce ",
+      "price": "$$18.00",
+      "category": null
+    },
+    {
+      "name": "Firecracker Roll",
+      "url": null,
+      "description": "shrimp tempura, crabmeat, avocado, cucumber roll topped with spicy tuna, crunch flakes, spicy mayo, and eel sauce",
+      "price": "$$17.00",
+      "category": null
+    },
+    {
+      "name": "Hot Kiss Roll",
+      "url": null,
+      "description": "Spicy tuna roll topped with salmon, avocado, jalapeno, served with spicy mayo and hot sauce",
+      "price": "$$18.00",
+      "category": null
+    },
+    {
+      "name": "Temptation Roll",
+      "url": null,
+      "description": "Shrimp tempura, cream cheese, avocado roll topped with crab stick, eel sauce, and spicy mayo",
+      "price": "$$17.00",
+      "category": null
+    },
+    {
+      "name": "Hawaiian Roll",
+      "url": null,
+      "description": "California roll topped with tuna and avocado",
+      "price": "$$18.00",
+      "category": null
+    },
+    {
+      "name": "Oakey Dokey Roll",
+      "url": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/3ac0a6cb-c858-43a6-b920-bbee8907829e-retina-large.jpg",
+      "description": "shrimp tempura, crabmeat, avocado, cucumber roll topped with shrimp, avocado, spicy mayo and eel sauce ",
+      "price": "$$17.00",
+      "category": null
+    },
+    {
+      "name": "Appetizers",
+      "url": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/3ac0a6cb-c858-43a6-b920-bbee8907829e-retina-large.jpg",
+      "description": "",
+      "price": "$$22.50",
+      "category": null
+    },
+    {
+      "name": "#38. Edamame",
+      "url": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/a9a2fc57-e764-4b6d-b778-78ec6e16f804-retina-large.jpg",
+      "description": "Lightly salted seasoned soy beans",
+      "price": "$$7.99",
+      "category": null
+    },
+    {
+      "name": "#34. Kimchi Pajun",
+      "url": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/08da65b0-e27f-4f90-a6b5-e7452b8dbdaa-retina-large-jpeg",
+      "description": "Traditional sizzling pancake with kimchi and scallion",
+      "price": "$$22.50",
+      "category": null
+    },
+    {
+      "name": "Soups",
+      "url": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/a3bf37ea-a043-4a96-b3b7-d152b7377706-retina-large-jpeg",
+      "description": "",
+      "price": "$$22.50",
+      "category": null
+    },
+    {
+      "name": "#76. Haemul Jungol",
+      "url": null,
+      "description": "",
+      "price": "$$44.99",
+      "category": null
+    },
+    {
+      "name": "Mandusoup",
+      "url": null,
+      "description": "",
+      "price": "$$22.50",
+      "category": null
+    },
+    {
+      "name": "#68. Buk- O Kongnamul Guk",
+      "url": null,
+      "description": "Beef bone soup with beef brisket, beef tendon, and noodles",
+      "price": "$$24.50",
+      "category": null
+    },
+    {
+      "name": "#75. Kimichi Jungol",
+      "url": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/ugc/5383aee2-c784-4826-a8ab-46954b16cd42.jpg",
+      "description": "Beef bone soup with beef brisket, beef tendon, and noodles",
+      "price": "$$34.99",
+      "category": null
+    },
+    {
+      "name": "BBQ",
+      "url": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/d01613cf-1b3a-498e-acb5-dd79bdd07dd9-retina-large-jpeg",
+      "description": "",
+      "price": "$$36.99",
+      "category": null
+    },
+    {
+      "name": "#92. Spicy Pork Gui",
+      "url": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/ugc/2b8799ff-2539-48dc-a6f2-d4a45929066b.jpg",
+      "description": "Prime rib eye sliced marinated beef in special sweet sake sauce",
+      "price": "$$29.99",
+      "category": null
+    },
+    {
+      "name": "96. Combo (Bulgogi + Spicy Dal Gui)",
+      "url": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/17f54e27-801d-41df-8c3f-5e7120438dfa-retina-large-jpeg",
+      "description": "Boneless short rib cubes marinated in special sauce.",
+      "price": "$$38.75",
+      "category": null
+    },
+    {
+      "name": "87. Jumul K",
+      "url": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/ugc/11c714f0-6ba6-4c00-821e-e2888f9eee16.jpg",
+      "description": "Boneless short rib cubes marinated in special sauce.",
+      "price": "$$52.50",
+      "category": null
+    },
+    {
+      "name": "#90. Dak Gui",
+      "url": "https://img.cdn4dd.com/p/fit=contain,width=1200,height=672,format=auto/media/yelp/39bcf626-e606-413c-a264-56e3055eefe6-9d20c58e-97b0-4806-b133-fb83711bbcdd.jpg",
+      "description": "Thinly sliced unseasoned prime brisket.",
+      "price": "$$29.99",
+      "category": null
+    },
+    {
+      "name": "#86. Yangyam Galbi",
+      "url": null,
+      "description": "Black Angus short rib marinated in special sauce.",
+      "price": "$$53.75",
+      "category": null
+    },
+    {
+      "name": "#88. Saeng Galbi",
+      "url": null,
+      "description": "Prime short rib without marinade.",
+      "price": "$$52.50",
+      "category": null
+    },
+    {
+      "name": "#89. Soowon Galbi",
+      "url": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/18e807b2-288f-4f8c-836c-796024d9fc8a-retina-large-jpeg",
+      "description": "Fresh Angus short ribs lightly marinated in special sauce.",
+      "price": "$$52.50",
+      "category": null
+    },
+    {
+      "name": "#93. Baby Back Ribs",
+      "url": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/18e807b2-288f-4f8c-836c-796024d9fc8a-retina-large-jpeg",
+      "description": "Tender, BBQ baby back ribs in sweet wine sauce.",
+      "price": "$$29.99",
+      "category": null
+    },
+    {
+      "name": "#91. Chicken Teriyaki",
+      "url": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/2d0e58b7-6c65-458c-bff7-41178f4983a3-retina-large.jpg",
+      "description": "Chicken breast with teriyaki sauce.",
+      "price": "$$29.99",
+      "category": null
+    },
+    {
+      "name": "Noodles",
+      "url": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/ugc/c3b32e56-b9a4-4f95-8e49-4618420c852a.jpg",
+      "description": "",
+      "price": "$$18.75",
+      "category": null
+    },
+    {
+      "name": "#122. Bibim Naengmyun",
+      "url": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/ugc/c3b32e56-b9a4-4f95-8e49-4618420c852a.jpg",
+      "description": "Buckwheat noodles, sliced meat, and vegetables served with spicy sauce",
+      "price": "$$18.75",
+      "category": null
+    },
+    {
+      "name": "#121. Mul Naengmyun",
+      "url": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/ugc/c3b32e56-b9a4-4f95-8e49-4618420c852a.jpg",
+      "description": "Spicy. Spicy seafood noodle soup.",
+      "price": "$$17.50",
+      "category": null
+    },
+    {
+      "name": "#119. Jjampong",
+      "url": null,
+      "description": "Spicy. Spicy seafood noodle soup.",
+      "price": "$$18.99",
+      "category": null
+    },
+    {
+      "name": "#124. Bulgogi + Mul Naengmyun",
+      "url": null,
+      "description": "",
+      "price": "$$33.75",
+      "category": null
+    },
+    {
+      "name": "#125. Spicy Baby Back Ribs (Spicy) +Mul Naengmyun",
+      "url": null,
+      "description": "With buckwheat noodle",
+      "price": "$$34.50",
+      "category": null
+    },
+    {
+      "name": "#125. Spicy Baby Back Ribs + Bibim Naengmyun",
+      "url": null,
+      "description": "Spicy.",
+      "price": "$$34.50",
+      "category": null
+    },
+    {
+      "name": "#127. Ramen",
+      "url": "https://img.cdn4dd.com/p/fit=contain,width=1200,height=672,format=auto/media/yelp/6b27d886-ff4c-4699-ba9b-3894cbd66be3-14ab2ac0-a940-48b7-aee9-89456898ac8a.jpg",
+      "description": "",
+      "price": "$$15.99",
+      "category": null
+    },
+    {
+      "name": "Galbi",
+      "url": "https://img.cdn4dd.com/p/fit=contain,width=1200,height=672,format=auto/media/yelp/6b27d886-ff4c-4699-ba9b-3894cbd66be3-14ab2ac0-a940-48b7-aee9-89456898ac8a.jpg",
+      "description": "Tender marinated beef short ribs with bean sprouts, shredded carrots, sliced seaweed, and a fried egg.",
+      "price": "$$45.99",
+      "category": null
+    },
+    {
+      "name": "#126. Udon",
+      "url": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/b6779729-39ab-4819-bd9e-ce551e6f4a3f-retina-large.jpg",
+      "description": "Thick udon noodles in a savory broth with sliced green onions, fresh herbs, and tofu slices.",
+      "price": "$$18.00",
+      "category": null
+    },
+    {
+      "name": "#120. Bibim guksu",
+      "url": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/ugc/fc5fbc91-a7e5-427b-a1eb-2c386e49de26.png",
+      "description": "Spicy. Thin somen noodles over the fresh vegetable with spicy sauce.",
+      "price": "$$15.99",
+      "category": null
+    },
+    {
+      "name": "Rice Dishes",
+      "url": "https://img.cdn4dd.com/p/fit=contain,width=1200,height=672,format=auto/media/yelp/50330ee1-9cfb-4882-ab5e-a0e8fe1b3832.jpg",
+      "description": "",
+      "price": "$$22.50",
+      "category": null
+    },
+    {
+      "name": "#58. Dolsot Bibimbap",
+      "url": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/1217140a-adad-486c-bc61-49daba409a68-retina-large-jpeg",
+      "description": "Bibimbap with vegetables in a hot stone pot served with chili sauce",
+      "price": "$$23.50",
+      "category": null
+    },
+    {
+      "name": "#57. Hwe- Deopbap",
+      "url": null,
+      "description": "Raw sesame marinated steak tartare over rice",
+      "price": "$$24.50",
+      "category": null
+    },
+    {
+      "name": "#61. Haemul Dolsot Bibimbap",
+      "url": "https://img.cdn4dd.com/p/fit=contain,width=1200,height=672,format=auto/media/yelp/2d54d771-3872-4178-aea4-349bdb4c19b8.jpg",
+      "description": "Raw sesame marinated steak tartare over rice",
+      "price": "$$23.75",
+      "category": null
+    },
+    {
+      "name": "#56. Yookhwe Bibimbap",
+      "url": "https://img.cdn4dd.com/p/fit=contain,width=1200,height=672,format=auto/media/yelp/2d54d771-3872-4178-aea4-349bdb4c19b8.jpg",
+      "description": "Raw sesame marinated steak tartare over rice",
+      "price": "$$22.50",
+      "category": null
+    },
+    {
+      "name": "Shrimp Fried Rice",
+      "url": "https://img.cdn4dd.com/p/fit=contain,width=1200,height=672,format=auto/media/yelp/1573ccc9-d7f6-4205-a508-e16c968e22b3.jpg",
+      "description": "Succulent shrimp tossed with flavorful fried rice and fresh veggies.",
+      "price": "$$23.75",
+      "category": null
+    },
+    {
+      "name": "Kimchi Fried Rice",
+      "url": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/167f5d30-c8d8-41c9-bbb7-1dc32a87c8fa-retina-large-jpeg",
+      "description": "Spicy rice stir-fried with kimchi, seasoned vegetables, and sesame seeds.",
+      "price": "$$19.99",
+      "category": null
+    },
+    {
+      "name": "#59. Kimchi Dolsot",
+      "url": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/364a78ad-7200-4327-b434-4cbbb8ecff3d-retina-large-jpeg",
+      "description": "Spicy. Bibim bab with kimchi in hot stone pot served with chili sauce.",
+      "price": "$$19.99",
+      "category": null
+    },
+    {
+      "name": "Grilled Fishes",
+      "url": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/364a78ad-7200-4327-b434-4cbbb8ecff3d-retina-large-jpeg",
+      "description": "",
+      "price": "$$29.99",
+      "category": null
+    },
+    {
+      "name": "#77. Saba Gui",
+      "url": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/364a78ad-7200-4327-b434-4cbbb8ecff3d-retina-large-jpeg",
+      "description": "Broiled Mackerel",
+      "price": "$$29.99",
+      "category": null
+    },
+    {
+      "name": "#80. Jang-O Gui",
+      "url": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/f68ca874-9da9-4e22-980a-4da6ee3a00c1-retina-large-jpeg",
+      "description": "Eel in a sweet soy sauce.",
+      "price": "$$43.75",
+      "category": null
+    },
+    {
+      "name": "Side",
+      "url": null,
+      "description": "",
+      "price": "$$3.00",
+      "category": null
+    },
+    {
+      "name": "White Rice",
+      "url": null,
+      "description": "Light and fluffy white rice.",
+      "price": "$$3.00",
+      "category": null
+    },
+    {
+      "name": "Sushi Appetizers (Mon-Sat Dinner, Mon-Fri Lunch Only)",
+      "url": null,
+      "description": "",
+      "price": "$$21.25",
+      "category": null
+    },
+    {
+      "name": "Ahi Tuna Tower",
+      "url": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/a9a2fc57-e764-4b6d-b778-78ec6e16f804-retina-large.jpg",
+      "description": "tower of spicy tuna, avocado, crabmeat, sushi rice, spicy mayo, wasabi sauce, eel sauce and caviar",
+      "price": "$$21.25",
+      "category": null
+    },
+    {
+      "name": "Salmon Tower",
+      "url": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/a9a2fc57-e764-4b6d-b778-78ec6e16f804-retina-large.jpg",
+      "description": "Tower of fresh salmon, avocado, crabmeat, sushi rice with spicy mayo, wasabi saue, eel sauce, and caviar ",
+      "price": "$$22.50",
+      "category": null
+    },
+    {
+      "name": "Edamame",
+      "url": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/a9a2fc57-e764-4b6d-b778-78ec6e16f804-retina-large.jpg",
+      "description": "Steamed young soybeans, lightly salted.",
+      "price": "$$5.99",
+      "category": null
+    },
+    {
+      "name": "Yellow Tail Heaven",
+      "url": null,
+      "description": "8 pcs of yellowtail sashimi with jalapeno, hot sauce, mustard, and ponzu sauce ",
+      "price": "$$24.50",
+      "category": null
+    },
+    {
+      "name": "Deep Fried Rolls (Mon-Sat Dinner, Mon-Fri Lunch Only)",
+      "url": null,
+      "description": "",
+      "price": "$$15.00",
+      "category": null
+    },
+    {
+      "name": "Crispy California Roll",
+      "url": null,
+      "description": "",
+      "price": "$$15.00",
+      "category": null
+    },
+    {
+      "name": "Tornado Roll",
+      "url": null,
+      "description": "Yellowtail, cream cheese, jalapeno roll deep fried with spicy mayo and eel sauce ",
+      "price": "$$17.00",
+      "category": null
+    },
+    {
+      "name": "Royal Lane Roll",
+      "url": null,
+      "description": "salmon, crabmeat, avocado, cream cheese roll whole fried with spicy mayo, wasabi sauce and eel sauce ",
+      "price": "$$16.99",
+      "category": null
+    },
+    {
+      "name": "Crispy Spicy Tuna Roll",
+      "url": null,
+      "description": "",
+      "price": "$$15.00",
+      "category": null
+    },
+    {
+      "name": "Fresh Water Eel Sushi 2 pcs",
+      "url": null,
+      "description": "",
+      "price": "$$12.50",
+      "category": null
+    },
+    {
+      "name": "Flying Fish Egg Sushi 2 pcs",
+      "url": null,
+      "description": "",
+      "price": "$$11.25",
+      "category": null
+    },
+    {
+      "name": "Fresh Salmon Sashimi",
+      "url": null,
+      "description": "",
+      "price": "$$18.75",
+      "category": null
+    },
+    {
+      "name": "Fresh Salmon Sushi 2 pcs",
+      "url": null,
+      "description": "",
+      "price": "$$11.25",
+      "category": null
+    },
+    {
+      "name": "Fresh Water Eel Sashimi",
+      "url": null,
+      "description": "",
+      "price": "$$21.25",
+      "category": null
+    },
+    {
+      "name": "Mackerel Sashimi",
+      "url": null,
+      "description": "",
+      "price": "$$18.75",
+      "category": null
+    },
+    {
+      "name": "Octopus Sashimi",
+      "url": null,
+      "description": "Tender octopus, thinly sliced, served raw.",
+      "price": "$$18.75",
+      "category": null
+    },
+    {
+      "name": "Octopus Sushi 2 pcs",
+      "url": null,
+      "description": "",
+      "price": "$$11.25",
+      "category": null
+    },
+    {
+      "name": "Red Snapper Sashimi 5 pcs",
+      "url": null,
+      "description": "",
+      "price": "$$18.75",
+      "category": null
+    },
+    {
+      "name": "Red Snapper Sushi 2 pcs",
+      "url": null,
+      "description": "",
+      "price": "$$11.25",
+      "category": null
+    },
+    {
+      "name": "Salmon Roe Sashimi",
+      "url": null,
+      "description": "",
+      "price": "$$18.75",
+      "category": null
+    },
+    {
+      "name": "Salmon Roe Sushi 2 pcs",
+      "url": null,
+      "description": "",
+      "price": "$$11.25",
+      "category": null
+    },
+    {
+      "name": "Shrimp Sushi 2 pcs",
+      "url": null,
+      "description": "",
+      "price": "$$11.25",
+      "category": null
+    },
+    {
+      "name": "Tuna Sashimi 5 pcs",
+      "url": null,
+      "description": "",
+      "price": "$$21.25",
+      "category": null
+    },
+    {
+      "name": "Tuna Sushi 2 pcs",
+      "url": null,
+      "description": "",
+      "price": "$$12.50",
+      "category": null
+    },
+    {
+      "name": "Yellowtail Sashimi 5 pcs",
+      "url": null,
+      "description": "",
+      "price": "$$21.25",
+      "category": null
+    },
+    {
+      "name": "Yellowtail Sushi 2 pcs",
+      "url": null,
+      "description": "",
+      "price": "$$12.50",
+      "category": null
+    },
+    {
+      "name": "Smelt Fish Roe Sashimi 5 pcs",
+      "url": null,
+      "description": "",
+      "price": "$$18.75",
+      "category": null
+    },
+    {
+      "name": "Smelt Fish Roe Sushi",
+      "url": null,
+      "description": "",
+      "price": "$$11.25",
+      "category": null
+    },
+    {
+      "name": "Mackerel Sushi 2 pcs",
+      "url": null,
+      "description": "",
+      "price": "$$11.25",
+      "category": null
+    },
+    {
+      "name": "Shrimp Sashimi 5 pcs",
+      "url": null,
+      "description": "",
+      "price": "$$18.75",
+      "category": null
+    },
+    {
+      "name": "VIP Sashimi Combo",
+      "url": null,
+      "description": "",
+      "price": "$$220.00",
+      "category": null
+    },
+    {
+      "name": "Deluxe Sushi Combo",
+      "url": null,
+      "description": "",
+      "price": "$$112.50",
+      "category": null
+    },
+    {
+      "name": "Regular Sashimi Combo",
+      "url": null,
+      "description": "",
+      "price": "$$150.00",
+      "category": null
+    },
+    {
+      "name": "Special Sashimi Combo",
+      "url": null,
+      "description": "",
+      "price": "$$131.00",
+      "category": null
+    },
+    {
+      "name": "Special Sushi Combo",
+      "url": null,
+      "description": "",
+      "price": "$$175.00",
+      "category": null
+    },
+    {
+      "name": "Deluxe Sashimi Combo",
+      "url": null,
+      "description": "",
+      "price": "$$112.50",
+      "category": null
+    },
+    {
+      "name": "Regular Sushi Combo",
+      "url": null,
+      "description": "",
+      "price": "$$62.50",
+      "category": null
+    }
+  ]
+}

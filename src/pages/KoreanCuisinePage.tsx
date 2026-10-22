@@ -1,7 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Flame, ArrowRight, Utensils, Soup, Sparkles } from 'lucide-react';
-import { MENU_ITEMS, MenuItem } from '../data/menuData';
+import {
+  MENU_ITEMS,
+  MenuItem,
+  KOREAN_BBQ_CATEGORY,
+  KOREAN_SOUP_CATEGORY,
+  KOREAN_RICE_CATEGORY,
+  KOREAN_NOODLE_CATEGORY,
+  KOREAN_APPETIZER_CATEGORY,
+} from '../data/menuData';
+import { IMAGES } from '../data/images';
 import { FoodCard } from '../components/FoodCard';
 import { CallToAction } from '../components/CallToAction';
 
@@ -10,12 +19,12 @@ interface KoreanCuisinePageProps {
 }
 
 export const KoreanCuisinePage: React.FC<KoreanCuisinePageProps> = ({ onOpenOrderModal }) => {
-  const bbqItems = MENU_ITEMS.filter((i) => i.category === 'Korean BBQ');
-  const stewItems = MENU_ITEMS.filter((i) => i.category === 'Soups & Stews');
+  const bbqItems = MENU_ITEMS.filter((i) => i.category === KOREAN_BBQ_CATEGORY);
+  const stewItems = MENU_ITEMS.filter((i) => i.category === KOREAN_SOUP_CATEGORY);
   const riceAndNoodleItems = MENU_ITEMS.filter(
-    (i) => i.category === 'Rice & Bibimbap' || i.category === 'Noodles'
+    (i) => i.category === KOREAN_RICE_CATEGORY || i.category === KOREAN_NOODLE_CATEGORY
   );
-  const pancakeItems = MENU_ITEMS.filter((i) => i.id.startsWith('app-'));
+  const pancakeItems = MENU_ITEMS.filter((i) => i.category === KOREAN_APPETIZER_CATEGORY);
 
   return (
     <div className="flex flex-col">
@@ -23,7 +32,7 @@ export const KoreanCuisinePage: React.FC<KoreanCuisinePageProps> = ({ onOpenOrde
       <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="/src/assets/images/korean_la_galbi_bbq_1792635195007.jpg"
+            src={IMAGES.koreanLaGalbiBbq}
             alt="Sizzling Korean LA Galbi short ribs on cast iron with green scallions"
             className="w-full h-full object-cover object-center filter brightness-[0.4] saturate-[1.1]"
           />
@@ -87,7 +96,7 @@ export const KoreanCuisinePage: React.FC<KoreanCuisinePageProps> = ({ onOpenOrde
 
           <div className="relative rounded-xl overflow-hidden shadow-2xl border border-[#282f40]">
             <img
-              src="/src/assets/images/korean_dolsot_bibimbap_1792635194705.jpg"
+              src={IMAGES.koreanDolsotBibimbap}
               alt="Korean Dolsot Bibimbap with colorful vegetables and egg yolk"
               className="w-full aspect-[4/3] object-cover"
             />
@@ -129,7 +138,7 @@ export const KoreanCuisinePage: React.FC<KoreanCuisinePageProps> = ({ onOpenOrde
               <FoodCard
                 key={item.id}
                 item={item}
-                onSelect={(selected: MenuItem) => onOpenOrderModal(selected.name)}
+                onSelect={(selected: MenuItem) => onOpenOrderModal(selected.doordashName ?? selected.name)}
               />
             ))}
           </div>
@@ -165,14 +174,14 @@ export const KoreanCuisinePage: React.FC<KoreanCuisinePageProps> = ({ onOpenOrde
             <FoodCard
               key={item.id}
               item={item}
-              onSelect={(selected: MenuItem) => onOpenOrderModal(selected.name)}
+              onSelect={(selected: MenuItem) => onOpenOrderModal(selected.doordashName ?? selected.name)}
             />
           ))}
           {riceAndNoodleItems.slice(0, 3).map((item) => (
             <FoodCard
               key={item.id}
               item={item}
-              onSelect={(selected: MenuItem) => onOpenOrderModal(selected.name)}
+              onSelect={(selected: MenuItem) => onOpenOrderModal(selected.doordashName ?? selected.name)}
             />
           ))}
         </div>
@@ -184,7 +193,7 @@ export const KoreanCuisinePage: React.FC<KoreanCuisinePageProps> = ({ onOpenOrde
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
             <div className="relative rounded-xl overflow-hidden shadow-2xl border border-[#262c3b]">
               <img
-                src="/src/assets/images/korean_seafood_pancake_1792635225710.jpg"
+                src={IMAGES.koreanSeafoodPancake}
                 alt="Crisp golden Korean Haemul Pajeon seafood pancake with dipping sauce"
                 className="w-full aspect-[4/3] object-cover"
               />

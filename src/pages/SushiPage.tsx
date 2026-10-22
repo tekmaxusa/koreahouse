@@ -1,8 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Fish, ArrowRight, Phone, CheckCircle, Utensils } from 'lucide-react';
-import { MENU_ITEMS, MenuItem } from '../data/menuData';
+import {
+  MENU_ITEMS,
+  MenuItem,
+  SUSHI_ROLL_CATEGORIES,
+  SUSHI_NIGIRI_CATEGORIES,
+  GRILLED_FISH_CATEGORY,
+} from '../data/menuData';
 import { RESTAURANT_INFO } from '../data/restaurantInfo';
+import { IMAGES } from '../data/images';
 import { FoodCard } from '../components/FoodCard';
 import { CallToAction } from '../components/CallToAction';
 
@@ -11,9 +18,15 @@ interface SushiPageProps {
 }
 
 export const SushiPage: React.FC<SushiPageProps> = ({ onOpenOrderModal }) => {
-  const sushiRolls = MENU_ITEMS.filter((i) => i.category === 'Sushi Rolls');
-  const nigiriSashimi = MENU_ITEMS.filter((i) => i.category === 'Nigiri & Sashimi');
-  const japaneseSpecialties = MENU_ITEMS.filter((i) => i.category === 'Japanese Specialties');
+  const sushiRolls = MENU_ITEMS.filter((i) =>
+    (SUSHI_ROLL_CATEGORIES as readonly string[]).includes(i.category)
+  );
+  const nigiriSashimi = MENU_ITEMS.filter((i) =>
+    (SUSHI_NIGIRI_CATEGORIES as readonly string[]).includes(i.category)
+  );
+  const japaneseSpecialties = MENU_ITEMS.filter(
+    (i) => i.category === GRILLED_FISH_CATEGORY || i.name.toLowerCase().includes('teriyaki')
+  );
 
   return (
     <div className="flex flex-col">
@@ -21,7 +34,7 @@ export const SushiPage: React.FC<SushiPageProps> = ({ onOpenOrderModal }) => {
       <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="/src/assets/images/sushi_special_rolls_sashimi_1792635210098.jpg"
+            src={IMAGES.sushiSpecialRollsSashimi}
             alt="Artisan sushi platter with fresh nigiri, sashimi, and specialty rolls at Korea House Dallas"
             className="w-full h-full object-cover object-center filter brightness-[0.4] saturate-[1.15]"
           />
@@ -50,13 +63,15 @@ export const SushiPage: React.FC<SushiPageProps> = ({ onOpenOrderModal }) => {
               <span>Explore Sushi Menu</span>
               <ArrowRight className="w-4 h-4" />
             </Link>
-            <button
-              onClick={() => onOpenOrderModal()}
+            <a
+              href={RESTAURANT_INFO.onlineOrderUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-6 py-3 bg-[#181d28]/90 hover:bg-[#222838] border border-[#333d52] text-[#f2efe9] text-xs font-semibold uppercase tracking-wider rounded-md transition-colors flex items-center gap-2"
             >
               <Phone className="w-3.5 h-3.5 text-[#d4af37]" />
-              <span>Call Sushi Bar</span>
-            </button>
+              <span>Order Online</span>
+            </a>
           </div>
         </div>
       </section>
@@ -125,7 +140,7 @@ export const SushiPage: React.FC<SushiPageProps> = ({ onOpenOrderModal }) => {
               <FoodCard
                 key={item.id}
                 item={item}
-                onSelect={(selected: MenuItem) => onOpenOrderModal(selected.name)}
+                onSelect={(selected: MenuItem) => onOpenOrderModal(selected.doordashName ?? selected.name)}
               />
             ))}
           </div>
@@ -160,7 +175,7 @@ export const SushiPage: React.FC<SushiPageProps> = ({ onOpenOrderModal }) => {
             <FoodCard
               key={item.id}
               item={item}
-              onSelect={(selected: MenuItem) => onOpenOrderModal(selected.name)}
+              onSelect={(selected: MenuItem) => onOpenOrderModal(selected.doordashName ?? selected.name)}
             />
           ))}
         </div>
@@ -195,7 +210,7 @@ export const SushiPage: React.FC<SushiPageProps> = ({ onOpenOrderModal }) => {
               <FoodCard
                 key={item.id}
                 item={item}
-                onSelect={(selected: MenuItem) => onOpenOrderModal(selected.name)}
+                onSelect={(selected: MenuItem) => onOpenOrderModal(selected.doordashName ?? selected.name)}
               />
             ))}
           </div>

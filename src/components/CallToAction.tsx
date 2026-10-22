@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Phone, Utensils } from 'lucide-react';
+import { Phone, Utensils, ExternalLink } from 'lucide-react';
 import { RESTAURANT_INFO } from '../data/restaurantInfo';
 
 interface CallToActionProps {
@@ -10,7 +10,6 @@ interface CallToActionProps {
 export const CallToAction: React.FC<CallToActionProps> = ({ onOpenOrderModal }) => {
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-[#141720] to-[#0f1115] border-t border-[#1e232f] py-20 px-4 sm:px-6 lg:px-8 text-center">
-      {/* Subtle decorative radial glow */}
       <div
         aria-hidden="true"
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-[#9e2a2b]/10 blur-[100px] pointer-events-none rounded-full"
@@ -27,27 +26,38 @@ export const CallToAction: React.FC<CallToActionProps> = ({ onOpenOrderModal }) 
           Whether you crave the sizzling tenderness of prime Korean Galbi or fresh hand-crafted sushi rolls, Korea House welcomes you to experience over 40 years of culinary tradition.
         </p>
 
-        <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
+        <div className="mt-8 flex flex-wrap items-center justify-center gap-4 w-full max-w-lg sm:max-w-none">
+          <a
+            href={RESTAURANT_INFO.onlineOrderUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-[#9e2a2b] hover:bg-[#b03032] active:bg-[#852324] text-white font-semibold rounded-md shadow-lg shadow-black/40 transition-all text-sm whitespace-nowrap w-full sm:w-auto"
+          >
+            <ExternalLink className="w-4 h-4" />
+            <span>Order Online</span>
+          </a>
+
           <Link
             to="/menu"
-            className="inline-flex items-center gap-2 px-6 py-3.5 bg-[#9e2a2b] hover:bg-[#b03032] active:bg-[#852324] text-white font-semibold rounded-md shadow-lg shadow-black/40 transition-all text-sm whitespace-nowrap"
+            className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-[#1c212d] hover:bg-[#252b3a] border border-[#2f374a] text-[#f2efe9] font-medium rounded-md transition-all text-sm whitespace-nowrap w-full sm:w-auto"
           >
-            <Utensils className="w-4 h-4" />
+            <Utensils className="w-4 h-4 text-[#d4af37]" />
             <span>Explore the Menu</span>
           </Link>
 
           {onOpenOrderModal ? (
             <button
+              type="button"
               onClick={onOpenOrderModal}
-              className="inline-flex items-center gap-2 px-6 py-3.5 bg-[#1c212d] hover:bg-[#252b3a] border border-[#2f374a] text-[#f2efe9] font-medium rounded-md transition-all text-sm whitespace-nowrap"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-[#1c212d] hover:bg-[#252b3a] border border-[#2f374a] text-[#f2efe9] font-medium rounded-md transition-all text-sm whitespace-nowrap w-full sm:w-auto"
             >
               <Phone className="w-4 h-4 text-[#d4af37]" />
-              <span>Call the Restaurant</span>
+              <span>Call for Takeout</span>
             </button>
           ) : (
             <a
               href={`tel:${RESTAURANT_INFO.phoneRaw}`}
-              className="inline-flex items-center gap-2 px-6 py-3.5 bg-[#1c212d] hover:bg-[#252b3a] border border-[#2f374a] text-[#f2efe9] font-medium rounded-md transition-all text-sm whitespace-nowrap"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-[#1c212d] hover:bg-[#252b3a] border border-[#2f374a] text-[#f2efe9] font-medium rounded-md transition-all text-sm whitespace-nowrap w-full sm:w-auto"
             >
               <Phone className="w-4 h-4 text-[#d4af37]" />
               <span>Call (972) 243-0434</span>
@@ -55,7 +65,7 @@ export const CallToAction: React.FC<CallToActionProps> = ({ onOpenOrderModal }) 
           )}
         </div>
 
-        <div className="mt-8 flex items-center gap-3 text-xs text-[#7d8699]">
+        <div className="mt-8 flex flex-wrap items-center justify-center gap-3 text-xs text-[#7d8699]">
           <span>2598 Royal Ln, Dallas, TX 75229</span>
           <span aria-hidden="true">·</span>
           <span>Open Daily 11:00 AM – 10:00 PM</span>

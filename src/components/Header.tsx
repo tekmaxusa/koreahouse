@@ -1,15 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Phone, Menu, X, Clock, MapPin } from 'lucide-react';
 import { RESTAURANT_INFO } from '../data/restaurantInfo';
 
-interface HeaderProps {
-  onOpenOrderModal: () => void;
-}
-
-export const Header: React.FC<HeaderProps> = ({ onOpenOrderModal }) => {
+export const Header: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const headerRef = useRef<HTMLElement>(null);
   const location = useLocation();
 
   useEffect(() => {
@@ -19,6 +16,25 @@ export const Header: React.FC<HeaderProps> = ({ onOpenOrderModal }) => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  useEffect(() => {
+    const el = headerRef.current;
+    if (!el) return;
+
+    const syncHeaderHeight = () => {
+      document.documentElement.style.setProperty('--site-header-height', `${el.offsetHeight}px`);
+    };
+
+    syncHeaderHeight();
+    const ro = new ResizeObserver(syncHeaderHeight);
+    ro.observe(el);
+    window.addEventListener('resize', syncHeaderHeight);
+
+    return () => {
+      ro.disconnect();
+      window.removeEventListener('resize', syncHeaderHeight);
+    };
+  }, [scrolled, mobileMenuOpen]);
 
   // Close mobile drawer on route change
   useEffect(() => {
@@ -37,7 +53,8 @@ export const Header: React.FC<HeaderProps> = ({ onOpenOrderModal }) => {
 
   return (
     <header
-      className={`sticky top-0 z-40 w-full transition-all duration-200 border-b ${
+      ref={headerRef}
+      className={`sticky top-0 z-40 w-full max-w-[100vw] transition-all duration-200 border-b ${
         scrolled
           ? 'bg-[#0f1115]/95 backdrop-blur-md border-[#232733] shadow-lg shadow-black/40 py-3'
           : 'bg-[#0f1115] border-[#1d212b] py-4'
@@ -68,10 +85,10 @@ export const Header: React.FC<HeaderProps> = ({ onOpenOrderModal }) => {
       </div>
 
       {/* Main Top Bar Contract: Zone 1 (Wordmark) - Zone 2 (Nav links) - Zone 3 (Action CTA) */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-3 sm:gap-6 min-w-0">
         {/* Zone 1: Brand Wordmark */}
-        <Link to="/" className="flex flex-col shrink-0 group">
-          <span className="font-serif text-xl sm:text-2xl font-bold tracking-tight text-[#f5f2eb] group-hover:text-[#d4af37] transition-colors whitespace-nowrap">
+        <Link to="/" className="flex flex-col min-w-0 max-w-[55%] sm:max-w-none shrink group">
+          <span className="font-serif text-lg sm:text-2xl font-bold tracking-tight text-[#f5f2eb] group-hover:text-[#d4af37] transition-colors truncate sm:whitespace-nowrap">
             KOREA HOUSE
           </span>
           <span className="text-[10px] sm:text-xs tracking-[0.2em] uppercase text-[#b89535] font-semibold">
@@ -111,22 +128,26 @@ export const Header: React.FC<HeaderProps> = ({ onOpenOrderModal }) => {
             <Phone className="w-3.5 h-3.5 text-[#d4af37]" />
             <span>(972) 243-0434</span>
           </a>
-          <button
-            onClick={onOpenOrderModal}
+          <a
+            href={RESTAURANT_INFO.onlineOrderUrl}
+            target="_blank"
+            rel="noopener noreferrer"
             className="px-4 py-2 text-xs font-semibold text-white bg-[#9e2a2b] hover:bg-[#b03032] active:bg-[#852324] rounded-md shadow-sm transition-all whitespace-nowrap shrink-0"
           >
-            Call to Order
-          </button>
+            Order Online
+          </a>
         </div>
 
         {/* Mobile menu trigger */}
         <div className="flex items-center gap-2 lg:hidden">
-          <button
-            onClick={onOpenOrderModal}
-            className="px-3 py-1.5 text-xs font-semibold text-white bg-[#9e2a2b] hover:bg-[#b03032] rounded-md transition-colors"
+          <a
+            href={RESTAURANT_INFO.onlineOrderUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-3 py-1.5 text-xs font-semibold text-white bg-[#9e2a2b] hover:bg-[#b03032] rounded-md transition-colors whitespace-nowrap"
           >
             Order
-          </button>
+          </a>
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="p-2 text-[#c0c6d4] hover:text-white hover:bg-[#1a1d26] rounded-md transition-colors"
@@ -139,7 +160,13 @@ export const Header: React.FC<HeaderProps> = ({ onOpenOrderModal }) => {
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="lg:hidden fixed inset-x-0 top-[105px] bg-[#12151c] border-b border-[#232733] px-6 py-6 shadow-2xl flex flex-col gap-4 z-50 max-h-[calc(100vh-105px)] overflow-y-auto">
+        <div
+          className="lg:hidden fixed inset-x-0 bg-[#12151c] border-b border-[#232733] px-4 sm:px-6 py-6 shadow-2xl flex flex-col gap-4 z-50 overflow-y-auto"
+          style={{
+            top: 'var(--site-header-height, 4.5rem)',
+            maxHeight: 'calc(100dvh - var(--site-header-height, 4.5rem))',
+          }}
+        >
           <div className="flex flex-col gap-2">
             {navLinks.map((link) => {
               const isActive = location.pathname === link.path;
@@ -167,15 +194,15 @@ export const Header: React.FC<HeaderProps> = ({ onOpenOrderModal }) => {
               <Phone className="w-4 h-4 text-[#d4af37]" />
               <span>Call (972) 243-0434</span>
             </a>
-            <button
-              onClick={() => {
-                setMobileMenuOpen(false);
-                onOpenOrderModal();
-              }}
-              className="w-full py-3 text-sm font-semibold text-white bg-[#9e2a2b] hover:bg-[#b03032] rounded-md transition-colors"
+            <a
+              href={RESTAURANT_INFO.onlineOrderUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setMobileMenuOpen(false)}
+              className="w-full py-3 text-sm font-semibold text-white bg-[#9e2a2b] hover:bg-[#b03032] rounded-md transition-colors text-center"
             >
-              Order Online / Pickup Info
-            </button>
+              Order Online
+            </a>
             <div className="text-center text-xs text-[#828a9b] mt-2">
               <p>2598 Royal Lane, Dallas, TX 75229</p>
               <p className="mt-0.5">Open Daily 11:00 AM – 10:00 PM</p>

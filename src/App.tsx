@@ -37,12 +37,12 @@ export default function App() {
   };
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL.replace(/\/$/, '') || undefined}>
       <ScrollToTop />
       <div className="min-h-screen flex flex-col bg-[#0f1115] text-[#f2efe9]">
-        <Header onOpenOrderModal={() => handleOpenOrderModal()} />
+        <Header />
 
-        <main className="flex-1">
+        <main className="flex-1 min-w-0 w-full overflow-x-clip">
           <Routes>
             <Route
               path="/"

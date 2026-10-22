@@ -4,6 +4,7 @@ import { MENU_ITEMS, MENU_CATEGORIES, MenuItem } from '../data/menuData';
 import { RESTAURANT_INFO } from '../data/restaurantInfo';
 import { FoodCard } from '../components/FoodCard';
 import { CallToAction } from '../components/CallToAction';
+import { menuCategoryLabel } from '../utils/menuCategoryLabel';
 
 interface MenuPageProps {
   onOpenOrderModal: (dishName?: string) => void;
@@ -46,44 +47,49 @@ export const MenuPage: React.FC<MenuPageProps> = ({ onOpenOrderModal }) => {
   }, [activeCategory, searchQuery, spicyOnly, signatureOnly]);
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen min-w-0 w-full">
       {/* Page Header */}
       <section className="bg-[#12151c] border-b border-[#1d222e] py-14 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:items-end justify-between gap-6">
           <div>
-            <div className="flex items-center gap-2 text-xs uppercase tracking-[0.25em] text-[#d4af37] font-semibold mb-2">
+            <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs sm:text-sm uppercase tracking-[0.15em] sm:tracking-[0.25em] text-[#d4af37] font-semibold mb-2">
               <span>Authentic Recipes</span>
-              <span aria-hidden="true" className="text-[#3c4456]">·</span>
-              <span>Prepared Fresh Daily</span>
+              <span aria-hidden="true" className="text-[#3c4456] hidden sm:inline">·</span>
+              <span className="hidden sm:inline">Prepared Fresh Daily</span>
             </div>
             <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-white tracking-tight">
               Restaurant Menu
             </h1>
-            <p className="mt-3 text-sm text-[#9aa2b2] max-w-2xl leading-relaxed">
-              Explore authentic Korean favorites from sizzling Galbi and bibimbap to steaming jjigae stews and handcrafted sushi rolls. All Korean main entrees include daily side dishes (banchan) and steamed rice.
+            <p className="mt-3 text-base sm:text-lg text-[#9aa2b2] max-w-2xl leading-relaxed">
+              Same categories, item names, prices, and photos as our DoorDash menu. Order online for delivery or call for dine-in and pickup.
             </p>
           </div>
 
-          <div className="flex items-center gap-3 shrink-0">
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 sm:gap-3 w-full md:w-auto shrink-0">
             <a
               href={`tel:${RESTAURANT_INFO.phoneRaw}`}
-              className="px-4 py-2.5 bg-[#1a1f2b] border border-[#2c3344] hover:bg-[#232938] text-[#f2efe9] text-xs font-semibold rounded-md transition-colors flex items-center gap-2"
+              className="px-4 py-2.5 bg-[#1a1f2b] border border-[#2c3344] hover:bg-[#232938] text-[#f2efe9] text-sm font-semibold rounded-md transition-colors flex items-center justify-center gap-2"
             >
               <Phone className="w-3.5 h-3.5 text-[#d4af37]" />
               <span>(972) 243-0434</span>
             </a>
-            <button
-              onClick={() => onOpenOrderModal()}
-              className="px-4 py-2.5 bg-[#9e2a2b] hover:bg-[#b03032] text-white text-xs font-semibold rounded-md transition-colors"
+            <a
+              href={RESTAURANT_INFO.onlineOrderUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-2.5 bg-[#9e2a2b] hover:bg-[#b03032] text-white text-sm font-semibold rounded-md transition-colors text-center"
             >
-              Call to Order Takeout
-            </button>
+              Order Online
+            </a>
           </div>
         </div>
       </section>
 
       {/* Menu Controls: Search & Category Tabs */}
-      <section className="sticky top-[69px] z-30 bg-[#0f1115]/95 backdrop-blur-md border-b border-[#1d222e] py-4">
+      <section
+        className="sticky z-30 bg-[#0f1115]/95 backdrop-blur-md border-b border-[#1d222e] py-4"
+        style={{ top: 'var(--site-header-height, 4.5rem)' }}
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-4">
           <div className="flex flex-col md:flex-row items-stretch md:items-center justify-between gap-4">
             {/* Search Input */}
@@ -94,7 +100,7 @@ export const MenuPage: React.FC<MenuPageProps> = ({ onOpenOrderModal }) => {
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 placeholder="Search dishes (e.g. Galbi, Bibimbap, Sushi, Tuna)..."
-                className="w-full pl-10 pr-9 py-2 bg-[#161a24] border border-[#262c3b] rounded-lg text-sm text-white placeholder-[#687285] focus:outline-none focus:border-[#d4af37] transition-colors"
+                className="w-full pl-10 pr-9 py-2.5 bg-[#161a24] border border-[#262c3b] rounded-lg text-base text-white placeholder-[#687285] focus:outline-none focus:border-[#d4af37] transition-colors"
               />
               {searchQuery && (
                 <button
@@ -108,7 +114,7 @@ export const MenuPage: React.FC<MenuPageProps> = ({ onOpenOrderModal }) => {
             </div>
 
             {/* Quick Filters */}
-            <div className="flex items-center gap-2 text-xs">
+            <div className="flex items-center gap-2 text-sm">
               <span className="text-[#8a92a3] hidden sm:inline flex items-center gap-1 font-medium">
                 <Filter className="w-3 h-3 text-[#d4af37]" />
                 <span>Filters:</span>
@@ -141,7 +147,7 @@ export const MenuPage: React.FC<MenuPageProps> = ({ onOpenOrderModal }) => {
                     setSpicyOnly(false);
                     setSignatureOnly(false);
                   }}
-                  className="px-2.5 py-1.5 text-xs text-[#d4af37] hover:underline whitespace-nowrap ml-1"
+                  className="px-2.5 py-1.5 text-sm text-[#d4af37] hover:underline whitespace-nowrap ml-1"
                 >
                   Reset all
                 </button>
@@ -150,20 +156,21 @@ export const MenuPage: React.FC<MenuPageProps> = ({ onOpenOrderModal }) => {
           </div>
 
           {/* Interactive Category Tabs (Segmented functional buttons) */}
-          <div className="flex items-center gap-1.5 overflow-x-auto pb-1 scrollbar-none text-xs">
+          <div className="flex items-center gap-1.5 overflow-x-auto pb-1 -mx-1 px-1 snap-x snap-mandatory scrollbar-none text-sm max-w-full">
             {MENU_CATEGORIES.map((cat) => {
               const isActive = activeCategory === cat;
               return (
                 <button
                   key={cat}
                   onClick={() => setActiveCategory(cat)}
-                  className={`px-3.5 py-2 rounded-md font-medium whitespace-nowrap shrink-0 transition-all ${
+                  title={cat}
+                  className={`px-3.5 sm:px-4 py-2.5 rounded-md font-medium whitespace-nowrap shrink-0 snap-start transition-all ${
                     isActive
                       ? 'bg-[#d4af37] text-black font-semibold shadow-md'
                       : 'bg-[#151922] text-[#9aa2b2] hover:text-white hover:bg-[#1f2533] border border-[#232938]'
                   }`}
                 >
-                  {cat}
+                  {menuCategoryLabel(cat)}
                 </button>
               );
             })}
@@ -174,14 +181,19 @@ export const MenuPage: React.FC<MenuPageProps> = ({ onOpenOrderModal }) => {
       {/* Menu Grid Content */}
       <section className="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full flex-1">
         {/* Active status indicator & results count */}
-        <div className="flex items-center justify-between mb-8 pb-3 border-b border-[#1c212c] text-xs text-[#828a9b]">
-          <div>
+        <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between mb-8 pb-3 border-b border-[#1c212c] text-sm text-[#828a9b]">
+          <div className="min-w-0">
             Showing <span className="font-semibold text-white tabular-nums">{filteredItems.length}</span> items
-            {activeCategory !== 'All' && <span> in <strong className="text-[#d4af37]">{activeCategory}</strong></span>}
+            {activeCategory !== 'All' && (
+              <span>
+                {' '}
+                in <strong className="text-[#d4af37]">{menuCategoryLabel(activeCategory, 'full')}</strong>
+              </span>
+            )}
             {searchQuery && <span> matching &ldquo;<span className="text-white">{searchQuery}</span>&rdquo;</span>}
           </div>
-          <div className="text-[11px] text-[#717a8c] italic">
-            *Prices and availability subject to change. Verified from official Dallas menu.
+          <div className="text-xs sm:text-sm text-[#717a8c] italic sm:text-right sm:max-w-md shrink-0">
+            *Synced with DoorDash Korea House — prices and availability may change on delivery apps.
           </div>
         </div>
 
@@ -213,7 +225,9 @@ export const MenuPage: React.FC<MenuPageProps> = ({ onOpenOrderModal }) => {
               <FoodCard
                 key={item.id}
                 item={item}
-                onSelect={(selected: MenuItem) => onOpenOrderModal(selected.name)}
+                onSelect={(selected: MenuItem) =>
+                  onOpenOrderModal(selected.doordashName ?? selected.name)
+                }
               />
             ))}
           </div>

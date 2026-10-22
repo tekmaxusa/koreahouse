@@ -13,6 +13,7 @@ import {
   ExternalLink
 } from 'lucide-react';
 import { RESTAURANT_INFO } from '../data/restaurantInfo';
+import { IMAGES } from '../data/images';
 import { MENU_ITEMS, MenuItem } from '../data/menuData';
 import { FoodCard } from '../components/FoodCard';
 import { CallToAction } from '../components/CallToAction';
@@ -32,7 +33,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenOrderModal }) => {
         {/* Background image with calibrated contrast scrim */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/src/assets/images/hero_korean_bbq_sushi_1792635194361.jpg"
+            src={IMAGES.heroKoreanBbqSushi}
             alt="Authentic Korean BBQ feast and fresh sushi spread at Korea House Dallas"
             className="w-full h-full object-cover object-center filter brightness-[0.45] saturate-[1.1]"
           />
@@ -59,9 +60,19 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenOrderModal }) => {
 
           {/* Action CTAs */}
           <div className="mt-8 sm:mt-10 flex flex-wrap items-center justify-center gap-4">
+            <a
+              href={RESTAURANT_INFO.onlineOrderUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-7 py-3.5 bg-[#9e2a2b] hover:bg-[#b03032] active:bg-[#852324] text-white font-semibold rounded-md shadow-xl shadow-red-950/40 transition-all text-sm tracking-wide whitespace-nowrap flex items-center gap-2 w-full sm:w-auto justify-center"
+            >
+              <span>Order Online</span>
+              <ExternalLink className="w-4 h-4" />
+            </a>
+
             <Link
               to="/menu"
-              className="px-7 py-3.5 bg-[#9e2a2b] hover:bg-[#b03032] active:bg-[#852324] text-white font-semibold rounded-md shadow-xl shadow-red-950/40 transition-all text-sm tracking-wide whitespace-nowrap flex items-center gap-2"
+              className="px-7 py-3.5 bg-[#181d28]/90 hover:bg-[#222838] border border-[#333d52] text-[#f2efe9] font-medium rounded-md backdrop-blur-sm transition-all text-sm tracking-wide whitespace-nowrap flex items-center gap-2 w-full sm:w-auto justify-center"
             >
               <span>Explore Our Menu</span>
               <ArrowRight className="w-4 h-4" />
@@ -137,7 +148,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenOrderModal }) => {
             <FoodCard
               key={dish.id}
               item={dish}
-              onSelect={(item: MenuItem) => onOpenOrderModal(item.name)}
+              onSelect={(item: MenuItem) => onOpenOrderModal(item.doordashName ?? item.name)}
             />
           ))}
         </div>
@@ -234,7 +245,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenOrderModal }) => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="relative rounded-xl overflow-hidden shadow-2xl border border-[#282f40]">
             <img
-              src="/src/assets/images/restaurant_interior_dining_1792635210502.jpg"
+              src={IMAGES.restaurantInteriorDining}
               alt="Warm, spacious dining room interior of Korea House Dallas on Royal Lane"
               className="w-full aspect-[16/10] object-cover"
             />

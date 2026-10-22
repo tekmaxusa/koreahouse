@@ -21,7 +21,10 @@ export const RESTAURANT_INFO = {
   phone: "(972) 243-0434",
   phoneRaw: "+19722430434",
   officialWebsite: "https://koreahousedallas.com/",
-  googleSearchUrl: "https://www.google.com/search?q=Korea+House+Korean+Cuisine+%26+Sushi",
+  /** DoorDash pickup & delivery for Korea House Dallas (2598 Royal Ln) */
+  onlineOrderUrl: "https://www.doordash.com/store/korea-house-dallas-57517/",
+  googleSearchUrl:
+    "https://www.google.com/search?q=Korea+House+Korean+Cuisine+%26+Sushi&kgmid=/g/1vc826dh",
   googleMapsDirectionsUrl: "https://www.google.com/maps/dir/?api=1&destination=2598+Royal+Lane+Dallas+TX+75229",
   hours: [
     { day: "Monday", lunch: "11:00 AM – 3:00 PM", dinner: "3:00 PM – 10:00 PM", full: "11:00 AM – 10:00 PM" },

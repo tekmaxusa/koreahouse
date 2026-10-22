@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, MapPin, Clock, Phone, Award, ShieldCheck, HeartHandshake } from 'lucide-react';
 import { RESTAURANT_INFO } from '../data/restaurantInfo';
+import { IMAGES } from '../data/images';
 import { CallToAction } from '../components/CallToAction';
 
 interface AboutPageProps {
@@ -15,7 +16,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenOrderModal }) => {
       <section className="relative min-h-[50vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="/src/assets/images/restaurant_interior_dining_1792635210502.jpg"
+            src={IMAGES.restaurantInteriorDining}
             alt="Interior dining atmosphere at Korea House Dallas"
             className="w-full h-full object-cover object-center filter brightness-[0.35]"
           />
@@ -74,7 +75,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenOrderModal }) => {
 
           <div className="relative rounded-xl overflow-hidden shadow-2xl border border-[#282f40]">
             <img
-              src="/src/assets/images/hero_korean_bbq_sushi_1792635194361.jpg"
+              src={IMAGES.heroKoreanBbqSushi}
               alt="Artisan Korean feast and sushi banquet at Korea House"
               className="w-full aspect-[4/3] object-cover"
             />
