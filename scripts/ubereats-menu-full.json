@@ -1,0 +1,1102 @@
+{
+  "count": 137,
+  "hero": "https://tb-static.uber.com/prod/image-proc/processed_images/7554d702ece460f20f915abe82bd0c19/e39556ef1e4c4565bc6c7dbd8b90869c.jpeg",
+  "items": [
+    {
+      "section": "Featured items",
+      "name": "Soondubu Jjigae",
+      "description": "Spicy red chili stew with silky tofu.",
+      "price": 2250,
+      "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/fc457a4533ec1a0d3cf504e222582dbd/0fb376d1da56c05644450062d25c5c84.jpeg",
+      "uuid": "aecd56f8-5425-4640-b43e-8030c4abf680"
+    },
+    {
+      "section": "Featured items",
+      "name": "Bibimbap",
+      "description": "Seasonal vegetables and rice topped with soft fried egg. Served with red pepper sauce.",
+      "price": 2250,
+      "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/c92312aab37a288eca7daf87128b03df/0fb376d1da56c05644450062d25c5c84.jpeg",
+      "uuid": "d78d8f6d-b4fe-4735-a34a-162c2734b69b"
+    },
+    {
+      "section": "Featured items",
+      "name": "Bulgogi",
+      "description": "Prime rib eye sliced marinated beef in special sweet sake sauce.",
+      "price": 3500,
+      "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/280920492550a74386a1289482de52fb/0fb376d1da56c05644450062d25c5c84.jpeg",
+      "uuid": "13cdd040-e42a-46c0-9e17-be5151d680ff"
+    },
+    {
+      "section": "Featured items",
+      "name": "LA Galbi",
+      "description": "Marinated black angus beef short ribs cut across the bone three bones.",
+      "price": 4499,
+      "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/888729036f3e0b2a9be239cac12283c0/a19bb09692310dfd41e49a96c424b3a6.jpeg",
+      "uuid": "52b57bfd-462b-4ed4-a6b0-bb510b214820"
+    },
+    {
+      "section": "Featured items",
+      "name": "Pork Belly Slices",
+      "description": "Unseasoned prime pork belly.",
+      "price": 3375,
+      "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/ec56dca3c6ce5d0743557ec2cb2317f3/0fb376d1da56c05644450062d25c5c84.jpeg",
+      "uuid": "e780a8d0-593b-44e0-bfe6-431d588e0911"
+    },
+    {
+      "section": "Featured items",
+      "name": "Duk Mandu Guk",
+      "description": "Rice cake and dumplings in beef broth.",
+      "price": 2125,
+      "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/2a544df18c0057f4eba906f1ad3e386b/f47cec1eac1d3b43eccf2318d065819a.jpeg",
+      "uuid": "0da19c2b-14f2-43c9-ad1f-7fc9928f8d91"
+    },
+    {
+      "section": "Featured items",
+      "name": "Dukbokki",
+      "description": "Rice cake sautéed in a spicy red chili & pepper sauce (add bulgogi 3.00)",
+      "price": 2250,
+      "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/5017b76f98b2ef7d7aee9916163bb513/0fb376d1da56c05644450062d25c5c84.jpeg",
+      "uuid": "c3173d31-2aac-401e-90b7-2a414818e427"
+    },
+    {
+      "section": "Featured items",
+      "name": "LA Galbi and Bibim Naengmyun",
+      "description": "Thinly sliced LA-style short ribs served with spicy cold noodles.",
+      "price": 2999,
+      "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/5f481d834e1e0eaec31987452bcd699d/3093d07d5a810674a6d7adf26679874b.jpeg",
+      "uuid": "a2466a4b-7768-464b-98c9-02dad639bd97"
+    },
+    {
+      "section": "Featured items",
+      "name": "Kimch Jaeyook Bokum",
+      "description": "Thinly sliced lean pork sauteed with kimchi in hot pepper sauce.",
+      "price": 3250,
+      "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/1d144d43bb8517ee82e5d04e07b699ec/a19bb09692310dfd41e49a96c424b3a6.jpeg",
+      "uuid": "e3003020-b98e-4645-8d08-e57ac3a691f3"
+    },
+    {
+      "section": "Featured items",
+      "name": "Ojinhgo Bokum",
+      "description": "Stir fried spicy squid with vegetables.",
+      "price": 3250,
+      "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/cb981f41fa4c3b83efd0827be531fb84/0fb376d1da56c05644450062d25c5c84.jpeg",
+      "uuid": "90cb997a-7ea2-4f60-8020-7e4517f9143a"
+    },
+    {
+      "section": "Featured items",
+      "name": "Saba Gui",
+      "description": "Broiled mackerel. Large.",
+      "price": 2999,
+      "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/32a8acb8e120a9650181585a9196566c/0fb376d1da56c05644450062d25c5c84.jpeg",
+      "uuid": "4f612c16-1885-43ef-9da9-d8a043b11887"
+    },
+    {
+      "section": "Appetizers",
+      "name": "Japchae",
+      "description": "Stir fried glass noodles & mixed vegetables flavored with soy& sesame oil",
+      "price": 2250,
+      "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/d004902e0139f27786ff3dcb1a64f592/0fb376d1da56c05644450062d25c5c84.jpeg",
+      "uuid": "bfa33a33-fbdb-46fd-b4e4-cd6009b17991"
+    },
+    {
+      "section": "Appetizers",
+      "name": "Haemul pajun",
+      "description": "Traditional sizzling pancakes with seafood & scallions",
+      "price": 2250,
+      "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/f30099de8750db34903db21c1b2d428d/0fb376d1da56c05644450062d25c5c84.jpeg",
+      "uuid": "1ff9f4bd-efba-44fe-a547-9a8a807def86"
+    },
+    {
+      "section": "Appetizers",
+      "name": "Mandu",
+      "description": "Fried dumplings",
+      "price": 1299,
+      "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/3b56aa967c0560ce218b1883bd48b3d3/3093d07d5a810674a6d7adf26679874b.jpeg",
+      "uuid": "cbb36119-192e-4d04-a32a-95265308b536"
+    },
+    {
+      "section": "Appetizers",
+      "name": "Dukbokki",
+      "description": "Rice cake sautéed in a spicy red chili & pepper sauce (add bulgogi 3.00)",
+      "price": 2250,
+      "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/5017b76f98b2ef7d7aee9916163bb513/0fb376d1da56c05644450062d25c5c84.jpeg",
+      "uuid": "c3173d31-2aac-401e-90b7-2a414818e427"
+    },
+    {
+      "section": "Appetizers",
+      "name": "Edamame",
+      "description": "Lightly salted seasoned soybeans.",
+      "price": 599,
+      "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/8b7c3fae81caf6f6e7a47769587a6dba/0fb376d1da56c05644450062d25c5c84.jpeg",
+      "uuid": "e5ae7809-182b-412e-bac4-a88685863f9d"
+    },
+    {
+      "section": "Appetizers",
+      "name": "Kimchi pajun",
+      "description": "Traditional sizzling pancakes with kimchi& scallions",
+      "price": 2250,
+      "imageUrl": "",
+      "uuid": "5153e83b-08d3-49cc-8b4e-77ed536d1062"
+    },
+    {
+      "section": "Appetizers",
+      "name": "Tempura",
+      "description": "Shrimp & vegetable tempura",
+      "price": 2450,
+      "imageUrl": "",
+      "uuid": "aa8e39a9-be66-435c-8025-865934dcfa76"
+    },
+    {
+      "section": "Soups",
+      "name": "Soondubu Jjigae",
+      "description": "Spicy red chili stew with silky tofu.",
+      "price": 2250,
+      "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/fc457a4533ec1a0d3cf504e222582dbd/0fb376d1da56c05644450062d25c5c84.jpeg",
+      "uuid": "aecd56f8-5425-4640-b43e-8030c4abf680"
+    },
+    {
+      "section": "Soups",
+      "name": "Kimchi Jjigae",
+      "description": "Kimchi, vegetables, and pork in spicy stew.",
+      "price": 2125,
+      "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/529f1c1ad41a204d29995d2d2ae1f1c6/0fb376d1da56c05644450062d25c5c84.jpeg",
+      "uuid": "7d156bbd-e897-41b9-bf3c-89c415c2f0d9"
+    },
+    {
+      "section": "Soups",
+      "name": "Galbisal Gukbap",
+      "description": "Chunks of short ribs in a spicy broth.",
+      "price": 2375,
+      "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/5025645d69c1f56d92a6def9ffb6346f/0fb376d1da56c05644450062d25c5c84.jpeg",
+      "uuid": "ae1bc1a6-f217-459d-96d6-821df3d8cb85"
+    },
+    {
+      "section": "Soups",
+      "name": "Duk Mandu Guk",
+      "description": "Rice cake and dumplings in beef broth.",
+      "price": 2125,
+      "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/2a544df18c0057f4eba906f1ad3e386b/f47cec1eac1d3b43eccf2318d065819a.jpeg",
+      "uuid": "0da19c2b-14f2-43c9-ad1f-7fc9928f8d91"
+    },
+    {
+      "section": "Soups",
+      "name": "Yookgaejang",
+      "description": "Shredded flank steak and vegetables in spicy broth.",
+      "price": 2375,
+      "imageUrl": "",
+      "uuid": "a59a82b6-467f-454f-ab86-270bbe58db22"
+    },
+    {
+      "section": "Soups",
+      "name": "Doenjang Jjigae",
+      "description": "Bean paste stew with tofu, zucchini, and potato.",
+      "price": 1999,
+      "imageUrl": "",
+      "uuid": "5144a276-4f18-4e79-8cf3-209f00ca30c8"
+    },
+    {
+      "section": "Soups",
+      "name": "Sullung Tang",
+      "description": "Beef bone soup with beef brisket, beef tendon, and noodles.",
+      "price": 2250,
+      "imageUrl": "",
+      "uuid": "895dcebe-7fd8-4221-9466-f8242618768b"
+    },
+    {
+      "section": "Soups",
+      "name": "Haemul Jungol",
+      "description": "Seafood, vegetables, noodles, and spicy broth in hot pot.",
+      "price": 4499,
+      "imageUrl": "",
+      "uuid": "13510f46-52a8-4294-9447-41cade093d97"
+    },
+    {
+      "section": "Soups",
+      "name": "Buk O Kongnamul Guk",
+      "description": "Dried shredded pollock and soybean sprouts.",
+      "price": 2450,
+      "imageUrl": "",
+      "uuid": "6435ead8-d5bf-4b2c-a836-14054269626d"
+    },
+    {
+      "section": "Soups",
+      "name": "Mandu guk ( soup )",
+      "description": "Traditional Korean-style soup made with dumplings.",
+      "price": 2250,
+      "imageUrl": "",
+      "uuid": "26b600fb-5727-4634-b3cc-5971fb232acd"
+    },
+    {
+      "section": "Chef's Specialties",
+      "name": "Kimch Jaeyook Bokum",
+      "description": "Thinly sliced lean pork sauteed with kimchi in hot pepper sauce.",
+      "price": 3250,
+      "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/1d144d43bb8517ee82e5d04e07b699ec/a19bb09692310dfd41e49a96c424b3a6.jpeg",
+      "uuid": "e3003020-b98e-4645-8d08-e57ac3a691f3"
+    },
+    {
+      "section": "Chef's Specialties",
+      "name": "Gae Jang",
+      "description": "Marinated raw blue crab in hot pepper sauce.",
+      "price": 4499,
+      "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/f98383babb3db836392d6b6bad54f9dc/0fb376d1da56c05644450062d25c5c84.jpeg",
+      "uuid": "deb97ad4-5680-41f5-85c2-c71e5248263f"
+    },
+    {
+      "section": "Chef's Specialties",
+      "name": "Ojinhgo Bokum",
+      "description": "Stir fried spicy squid with vegetables.",
+      "price": 3250,
+      "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/cb981f41fa4c3b83efd0827be531fb84/0fb376d1da56c05644450062d25c5c84.jpeg",
+      "uuid": "90cb997a-7ea2-4f60-8020-7e4517f9143a"
+    },
+    {
+      "section": "Chef's Specialties",
+      "name": "Yookhwe",
+      "description": "Steak tartare. Raw sesame marinated steak tartare seasoned with garlic and soy over sliced Korean pear.",
+      "price": 4250,
+      "imageUrl": "",
+      "uuid": "34c0122c-f423-4868-bb5e-060e9f9457dd"
+    },
+    {
+      "section": "Rice Dishes",
+      "name": "Bibimbap",
+      "description": "Seasonal vegetables and rice topped with soft fried egg. Served with red pepper sauce.",
+      "price": 2250,
+      "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/c92312aab37a288eca7daf87128b03df/0fb376d1da56c05644450062d25c5c84.jpeg",
+      "uuid": "d78d8f6d-b4fe-4735-a34a-162c2734b69b"
+    },
+    {
+      "section": "Rice Dishes",
+      "name": "Hwe Deopbap",
+      "description": "Sashimi bibimbap with greens, cucumber, and masago egg.",
+      "price": 2450,
+      "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/d4f735815512446e12f8cf67eb469ac2/3093d07d5a810674a6d7adf26679874b.jpeg",
+      "uuid": "7c975524-3912-4b36-9c1c-9fe12c51efe0"
+    },
+    {
+      "section": "Rice Dishes",
+      "name": "Yuk Hwe Bibimbap",
+      "description": "Raw sesame marinated steak tartare over rice.",
+      "price": 2450,
+      "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/e2781a00949079d1fb00cc2653e2eb84/3093d07d5a810674a6d7adf26679874b.jpeg",
+      "uuid": "f651c8f2-1854-477e-8779-d6120057520f"
+    },
+    {
+      "section": "Rice Dishes",
+      "name": "Kimchi Fried Rice",
+      "description": "Spicy Korean-style rice dish with kimchi.",
+      "price": 1999,
+      "imageUrl": "",
+      "uuid": "68d85593-645a-49da-8fb9-212ecb9dcb25"
+    },
+    {
+      "section": "Rice Dishes",
+      "name": "Fried Rice",
+      "description": "Savoury rice dish with a blend of flavours.",
+      "price": 1999,
+      "imageUrl": "",
+      "uuid": "ddf54f8b-2db0-45ca-86bf-1ac8ad224309"
+    },
+    {
+      "section": "Grilled Fishes",
+      "name": "Saba Gui",
+      "description": "Broiled mackerel. Large.",
+      "price": 2999,
+      "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/32a8acb8e120a9650181585a9196566c/0fb376d1da56c05644450062d25c5c84.jpeg",
+      "uuid": "4f612c16-1885-43ef-9da9-d8a043b11887"
+    },
+    {
+      "section": "Grilled Fishes",
+      "name": "Jang O Gui",
+      "description": "Eel in a sweet soy sauce.",
+      "price": 4375,
+      "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/e23aeb8c9fb66b4272f119a2e2e7360d/0fb376d1da56c05644450062d25c5c84.jpeg",
+      "uuid": "401d98a4-ebd6-4f61-ad46-d37a0c3b4876"
+    },
+    {
+      "section": "Traditional Korean Dinner",
+      "name": "Bulgogi Jungsik",
+      "description": "With Yookhwe, Gaejang, Shrimp Tempura, Japchae, Grilled Fish, Doenjang Chigae, Kimchi and Variety of Side Dish.",
+      "price": 8999,
+      "imageUrl": "",
+      "uuid": "5150ffcb-ffe0-400d-84e2-918e115fc6cb"
+    },
+    {
+      "section": "Barbecue",
+      "name": "LA Galbi",
+      "description": "Marinated black angus beef short ribs cut across the bone three bones.",
+      "price": 4499,
+      "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/888729036f3e0b2a9be239cac12283c0/a19bb09692310dfd41e49a96c424b3a6.jpeg",
+      "uuid": "52b57bfd-462b-4ed4-a6b0-bb510b214820"
+    },
+    {
+      "section": "Barbecue",
+      "name": "Pork Belly Slices",
+      "description": "Unseasoned prime pork belly.",
+      "price": 3375,
+      "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/ec56dca3c6ce5d0743557ec2cb2317f3/0fb376d1da56c05644450062d25c5c84.jpeg",
+      "uuid": "e780a8d0-593b-44e0-bfe6-431d588e0911"
+    },
+    {
+      "section": "Barbecue",
+      "name": "Bulgogi",
+      "description": "Prime rib eye sliced marinated beef in special sweet sake sauce.",
+      "price": 3500,
+      "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/280920492550a74386a1289482de52fb/0fb376d1da56c05644450062d25c5c84.jpeg",
+      "uuid": "13cdd040-e42a-46c0-9e17-be5151d680ff"
+    },
+    {
+      "section": "Barbecue",
+      "name": "Combo (Bulgogi and Dak Gui)",
+      "description": "Prime beef marinated beef in special sweet sake sauce, marinated chicken in spicy, and sweet sauce.",
+      "price": 3875,
+      "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/2110f12f30210a6efa4b1abac0249494/0fb376d1da56c05644450062d25c5c84.jpeg",
+      "uuid": "522e50da-50f4-489b-8fa3-8efc75ec1b75"
+    },
+    {
+      "section": "Barbecue",
+      "name": "Spicy Baby Back Ribs",
+      "description": "Specially marinated pork ribs in spicy and hot chili pepper sauce.",
+      "price": 3499,
+      "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/d906e78d3feef57e3b9d355081f9c750/0fb376d1da56c05644450062d25c5c84.jpeg",
+      "uuid": "0b04f0b1-1ecc-4c2a-a59f-5f95bd693c9f"
+    },
+    {
+      "section": "Barbecue",
+      "name": "Chicken Teriyaki",
+      "description": "Chicken breast with teriyaki sauce.",
+      "price": 3499,
+      "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/415c45430fdbf06aaf449298ee390198/0fb376d1da56c05644450062d25c5c84.jpeg",
+      "uuid": "27de028f-9dad-4dc5-979f-f87afd220d84"
+    },
+    {
+      "section": "Barbecue",
+      "name": "Dak Gui",
+      "description": "Marinated chicken in spicy and sweet sauce.",
+      "price": 3375,
+      "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/57dd1dcbf9f76a2d09789b7858683173/0fb376d1da56c05644450062d25c5c84.jpeg",
+      "uuid": "1f92cd2d-5a25-4989-bac8-dfd4703e6912"
+    },
+    {
+      "section": "Barbecue",
+      "name": "Dukbaegi Bulgogi",
+      "description": "Bulgogi, glass noodle, mushroom, and rice cake with beef broth.",
+      "price": 2450,
+      "imageUrl": "",
+      "uuid": "87904410-3593-479e-a507-fa5db78b2cb8"
+    },
+    {
+      "section": "Barbecue",
+      "name": "Chadol Baekee",
+      "description": "Thinly sliced unseasoned prime brisket.",
+      "price": 3499,
+      "imageUrl": "",
+      "uuid": "edf4cce4-e15a-4028-bf55-d5241c641982"
+    },
+    {
+      "section": "Barbecue",
+      "name": "Yangyum Galbi",
+      "description": "Black angus short rib marinated in special sauce.",
+      "price": 5375,
+      "imageUrl": "",
+      "uuid": "e4e25b16-6a83-4306-beae-d6908ddb63f5"
+    },
+    {
+      "section": "Barbecue",
+      "name": "Saeng Galbi",
+      "description": "Prime short rib without marinade.",
+      "price": 5250,
+      "imageUrl": "",
+      "uuid": "75061b7d-709b-4343-a130-2f910a0511ad"
+    },
+    {
+      "section": "Barbecue",
+      "name": "Baby Back Ribs",
+      "description": "Tender and barbecue baby back ribs in sweet wine sauce.",
+      "price": 3375,
+      "imageUrl": "",
+      "uuid": "9a6a7d26-6c5e-4ccd-b27e-ad5893c3cc3b"
+    },
+    {
+      "section": "Barbecue",
+      "name": "Soowon Galbi",
+      "description": "Fresh angus short ribs lightly marinated in special sauce.",
+      "price": 5250,
+      "imageUrl": "",
+      "uuid": "107f7aee-444b-4019-baa6-d5973f8244e9"
+    },
+    {
+      "section": "Sushi and Sashimi (Available for Dinner Mon-Sat) (Available for Lunch Mon-Fri)",
+      "name": "California Roll",
+      "description": "Sushi roll with crab, avocado, and cucumber, rice on the outside with sesame seeds.",
+      "price": 1250,
+      "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/7a1cc2023858dbec6cd280a3d4619395/0fb376d1da56c05644450062d25c5c84.jpeg",
+      "uuid": "c572ccc8-34f5-42ff-be14-0ffbe439d9e3"
+    },
+    {
+      "section": "Sushi and Sashimi (Available for Dinner Mon-Sat) (Available for Lunch Mon-Fri)",
+      "name": "Shrimp Tempura Roll",
+      "description": "Crisp shrimp in a delicate roll.",
+      "price": 1400,
+      "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/c8302d6c58bf1410b2316eb6918f8ad7/0fb376d1da56c05644450062d25c5c84.jpeg",
+      "uuid": "c7f63872-e030-48cd-bec1-88b1a695f1f1"
+    },
+    {
+      "section": "Sushi and Sashimi (Available for Dinner Mon-Sat) (Available for Lunch Mon-Fri)",
+      "name": "Firecracker Roll",
+      "description": "Shrimp tempura, crabmeat, avocado, cucumber roll topped with spicy tuna, crunch flakes, spicy mayo, and eel sauce.",
+      "price": 1700,
+      "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/1867fd9e80975e63733dddccea6174b9/0fb376d1da56c05644450062d25c5c84.jpeg",
+      "uuid": "0a51dd06-0ba0-4835-82f3-eb18fc4c450a"
+    },
+    {
+      "section": "Sushi and Sashimi (Available for Dinner Mon-Sat) (Available for Lunch Mon-Fri)",
+      "name": "Crispy California Roll",
+      "description": "Lightly battered deep fried California roll served with eel sauce and spicy mayo",
+      "price": 1500,
+      "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/6b072f26faafd732f63e78721ae83bbc/0fb376d1da56c05644450062d25c5c84.jpeg",
+      "uuid": "f17cf90b-a2a3-4b54-8a19-87880e0c12d6"
+    },
+    {
+      "section": "Sushi and Sashimi (Available for Dinner Mon-Sat) (Available for Lunch Mon-Fri)",
+      "name": "Oakey Dokey Roll",
+      "description": "Shrimp tempura, crabmeat, avocado, cucumber roll topped with shrimp, avocado,  spicy mayo and eel sauce",
+      "price": 1700,
+      "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/f3cda46a6ec0edc761d7f6e62ac9f045/0fb376d1da56c05644450062d25c5c84.jpeg",
+      "uuid": "e7242f67-a807-4b86-9af2-844a17f4c1ca"
+    },
+    {
+      "section": "Sushi and Sashimi (Available for Dinner Mon-Sat) (Available for Lunch Mon-Fri)",
+      "name": "Salmon Avocado Roll",
+      "description": "Fresh salmon and avocado rolled together.",
+      "price": 1500,
+      "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/bc1a3ffff1ab61cd283ec0c9f8171211/3093d07d5a810674a6d7adf26679874b.jpeg",
+      "uuid": "d5948d1d-fcec-4132-a5a1-b82483c60ff4"
+    },
+    {
+      "section": "Sushi and Sashimi (Available for Dinner Mon-Sat) (Available for Lunch Mon-Fri)",
+      "name": "Hot Kiss Roll",
+      "description": "spicy tuna roll topped with salmon, avocado, jalapeno, served with spicy mayo",
+      "price": 1800,
+      "imageUrl": "",
+      "uuid": "30975778-dc1b-4717-9ea6-c595a2398175"
+    },
+    {
+      "section": "Sushi and Sashimi (Available for Dinner Mon-Sat) (Available for Lunch Mon-Fri)",
+      "name": "Avocado Roll",
+      "description": "Fresh avocado wrapped in sushi rice.",
+      "price": 1125,
+      "imageUrl": "",
+      "uuid": "b02f7d0d-3033-4173-a2ea-b4985b0eb258"
+    },
+    {
+      "section": "Sushi and Sashimi (Available for Dinner Mon-Sat) (Available for Lunch Mon-Fri)",
+      "name": "Philadelphia Roll",
+      "description": "Smoked Salmon, avocado, cucumber, and cream cheese",
+      "price": 1400,
+      "imageUrl": "",
+      "uuid": "5b6cca64-3949-45ee-a6ed-41962c666550"
+    },
+    {
+      "section": "Sushi and Sashimi (Available for Dinner Mon-Sat) (Available for Lunch Mon-Fri)",
+      "name": "Crispy Spicy Tuna Roll",
+      "description": "Lightly battered deep fried spicy tuna roll served with eel sauce and spicy mayo",
+      "price": 1500,
+      "imageUrl": "",
+      "uuid": "4e1a5826-3bb0-4f2a-83a7-8ec517ed28e5"
+    },
+    {
+      "section": "Sushi and Sashimi (Available for Dinner Mon-Sat) (Available for Lunch Mon-Fri)",
+      "name": "Spider Roll",
+      "description": "Soft shell crab tempura, cucumber, avocado, spicy mayo",
+      "price": 1500,
+      "imageUrl": "",
+      "uuid": "6d6ad1b2-f757-4151-8ea8-c1818defc17e"
+    },
+    {
+      "section": "Sushi and Sashimi (Available for Dinner Mon-Sat) (Available for Lunch Mon-Fri)",
+      "name": "Salmon Roll",
+      "description": "Fresh salmon wrapped in sushi rice.",
+      "price": 1400,
+      "imageUrl": "",
+      "uuid": "0142f03c-0368-4414-8531-034bde3b4f36"
+    },
+    {
+      "section": "Sushi and Sashimi (Available for Dinner Mon-Sat) (Available for Lunch Mon-Fri)",
+      "name": "Spicy Tuna Roll",
+      "description": "Fresh tuna mixed with spicy seasoning, rolled in sushi rice.",
+      "price": 1500,
+      "imageUrl": "",
+      "uuid": "84e223dc-8b07-46f1-aaf6-65e977b5de7e"
+    },
+    {
+      "section": "Sushi and Sashimi (Available for Dinner Mon-Sat) (Available for Lunch Mon-Fri)",
+      "name": "Fresh Salmon Sushi (2pcs)",
+      "description": "Fresh salmon pieces served as sushi.",
+      "price": 1125,
+      "imageUrl": "",
+      "uuid": "49a13190-9728-4427-993c-aa03ad39b929"
+    },
+    {
+      "section": "Sushi and Sashimi (Available for Dinner Mon-Sat) (Available for Lunch Mon-Fri)",
+      "name": "Veggie Tempura Roll",
+      "description": "Crisp tempura roll filled with vegetables.",
+      "price": 1125,
+      "imageUrl": "",
+      "uuid": "5ca8bfd6-6bf2-492d-9d45-f9fa166093fa"
+    },
+    {
+      "section": "Sushi and Sashimi (Available for Dinner Mon-Sat) (Available for Lunch Mon-Fri)",
+      "name": "Cucumber Roll",
+      "description": "Fresh cucumber wrapped in sushi rice.",
+      "price": 999,
+      "imageUrl": "",
+      "uuid": "c3a62121-e043-423d-b787-49b0f7f89995"
+    },
+    {
+      "section": "Sushi and Sashimi (Available for Dinner Mon-Sat) (Available for Lunch Mon-Fri)",
+      "name": "Yellowtail Roll",
+      "description": "Fresh yellowtail wrapped in sushi roll.",
+      "price": 1400,
+      "imageUrl": "",
+      "uuid": "d1354a2f-ba33-4911-b010-863bc8d95acc"
+    },
+    {
+      "section": "Sushi and Sashimi (Available for Dinner Mon-Sat) (Available for Lunch Mon-Fri)",
+      "name": "Flying Fish Egg Sushi (2pcs)",
+      "description": "Delicate flying fish eggs on vinegared rice.",
+      "price": 1125,
+      "imageUrl": "",
+      "uuid": "c0c50ae1-d237-44a1-9459-105aa2cfa03f"
+    },
+    {
+      "section": "Sushi and Sashimi (Available for Dinner Mon-Sat) (Available for Lunch Mon-Fri)",
+      "name": "Veggi Roll",
+      "description": "Crisp roll filled with vegetables.",
+      "price": 1125,
+      "imageUrl": "",
+      "uuid": "8ec791d5-479f-4497-97fb-de6aff86ce70"
+    },
+    {
+      "section": "Sushi and Sashimi (Available for Dinner Mon-Sat) (Available for Lunch Mon-Fri)",
+      "name": "Caterpillar Roll",
+      "description": "Eel, cucumber, mountain carrot roll topped with avocado and eel sauce",
+      "price": 1700,
+      "imageUrl": "",
+      "uuid": "ebc0d196-1204-4a07-a4a6-27de96c3083a"
+    },
+    {
+      "section": "Sushi and Sashimi (Available for Dinner Mon-Sat) (Available for Lunch Mon-Fri)",
+      "name": "Alaska Roll",
+      "description": "California roll topped with fresh salmon and avocado",
+      "price": 1800,
+      "imageUrl": "",
+      "uuid": "bbe89a2f-ee72-4649-9725-187c48620d07"
+    },
+    {
+      "section": "Sushi and Sashimi (Available for Dinner Mon-Sat) (Available for Lunch Mon-Fri)",
+      "name": "Deluxe Sushi Combination",
+      "description": "Assortment of sushi rolls and sashimi, perfect for a delightful meal.",
+      "price": 11250,
+      "imageUrl": "",
+      "uuid": "6ecd6e7b-cfcf-4300-8e46-7730842144b5"
+    },
+    {
+      "section": "Sushi and Sashimi (Available for Dinner Mon-Sat) (Available for Lunch Mon-Fri)",
+      "name": "Tornado Deep Fried Roll",
+      "description": "Yellowtail, cream cheese, jalapeno roll deep fried with spicy mayo and eel sauce",
+      "price": 1700,
+      "imageUrl": "",
+      "uuid": "0bd51bcb-cd20-4c99-84d8-51cf70a8d8cd"
+    },
+    {
+      "section": "Sushi and Sashimi (Available for Dinner Mon-Sat) (Available for Lunch Mon-Fri)",
+      "name": "Temptation Roll",
+      "description": "shrimp tempura, cream cheese, avocado roll topped with crab stick, ell sauce and spicy mayo",
+      "price": 1700,
+      "imageUrl": "",
+      "uuid": "6133f51e-e1fe-43ef-a343-8aabba9a636b"
+    },
+    {
+      "section": "Sushi and Sashimi (Available for Dinner Mon-Sat) (Available for Lunch Mon-Fri)",
+      "name": "Octopus Sashimi (5pcs)",
+      "description": "Fresh, tender octopus sliced into thin pieces.",
+      "price": 1875,
+      "imageUrl": "",
+      "uuid": "4b1644fe-21b4-46cd-81b4-0a093f075c8a"
+    },
+    {
+      "section": "Sushi and Sashimi (Available for Dinner Mon-Sat) (Available for Lunch Mon-Fri)",
+      "name": "Tuna Sushi (2pcs)",
+      "description": "Fresh tuna served on vinegared rice.",
+      "price": 1250,
+      "imageUrl": "",
+      "uuid": "34c07340-440d-443c-962e-08e1db016704"
+    },
+    {
+      "section": "Sushi and Sashimi (Available for Dinner Mon-Sat) (Available for Lunch Mon-Fri)",
+      "name": "YellowTail Heaven",
+      "description": "8 pcs of yellowtail sashimi with jalapeno, hot sauce, ponzu sauce",
+      "price": 2450,
+      "imageUrl": "",
+      "uuid": "3eec386c-7883-457d-98bc-49bb9c317a6d"
+    },
+    {
+      "section": "Sushi and Sashimi (Available for Dinner Mon-Sat) (Available for Lunch Mon-Fri)",
+      "name": "Eel Roll",
+      "description": "Fresh eel wrapped in sushi rice and seaweed.",
+      "price": 1400,
+      "imageUrl": "",
+      "uuid": "11ebd977-0745-4417-9b13-97b97ad21cc4"
+    },
+    {
+      "section": "Sushi and Sashimi (Available for Dinner Mon-Sat) (Available for Lunch Mon-Fri)",
+      "name": "Fresh Salmon Sashimi (5pcs)",
+      "description": "Fresh, raw salmon sliced into thin pieces.",
+      "price": 1875,
+      "imageUrl": "",
+      "uuid": "8bda151f-3f66-4816-8251-74e6b593a64d"
+    },
+    {
+      "section": "Sushi and Sashimi (Available for Dinner Mon-Sat) (Available for Lunch Mon-Fri)",
+      "name": "Spicy Salmon Roll",
+      "description": "Salmon mixed with spicy sauce, rolled with rice and seaweed.",
+      "price": 1400,
+      "imageUrl": "",
+      "uuid": "79e98b6f-50b2-4962-acc6-326828e14f0c"
+    },
+    {
+      "section": "Sushi and Sashimi (Available for Dinner Mon-Sat) (Available for Lunch Mon-Fri)",
+      "name": "Regular Sushi Combination",
+      "description": "Assorted sushi pieces served with a variety of flavors.",
+      "price": 6250,
+      "imageUrl": "",
+      "uuid": "0c7d96fc-d6e5-42d8-a049-ddbf8a5aa04e"
+    },
+    {
+      "section": "Sushi and Sashimi (Available for Dinner Mon-Sat) (Available for Lunch Mon-Fri)",
+      "name": "Diablo Roll",
+      "description": "shrimp tempura roll topped with habanero pepper, spicy tuna, ebi, avocado, and spicy sauce",
+      "price": 1800,
+      "imageUrl": "",
+      "uuid": "dcbefffe-bc87-4710-ab2a-d8b9aea0bb81"
+    },
+    {
+      "section": "Sushi and Sashimi (Available for Dinner Mon-Sat) (Available for Lunch Mon-Fri)",
+      "name": "Tuna Roll",
+      "description": "Fresh tuna wrapped in sushi rice.",
+      "price": 1400,
+      "imageUrl": "",
+      "uuid": "552c309e-95be-4543-9243-4fbf3b118360"
+    },
+    {
+      "section": "Sushi and Sashimi (Available for Dinner Mon-Sat) (Available for Lunch Mon-Fri)",
+      "name": "Hawaiian Roll",
+      "description": "California roll topped with tuna and avocado",
+      "price": 1800,
+      "imageUrl": "",
+      "uuid": "029b29df-572a-4227-946a-937ef2a1f97e"
+    },
+    {
+      "section": "Sushi and Sashimi (Available for Dinner Mon-Sat) (Available for Lunch Mon-Fri)",
+      "name": "Deluxe Sushi & Sashimi Combination",
+      "description": "Assortment of sushi and sashimi, expertly prepared for a delightful dining experience.",
+      "price": 15000,
+      "imageUrl": "",
+      "uuid": "b0a5fe31-aa6a-4f96-a652-4210d7e042d1"
+    },
+    {
+      "section": "Sushi and Sashimi (Available for Dinner Mon-Sat) (Available for Lunch Mon-Fri)",
+      "name": "Yellowtail Sushi (2pcs)",
+      "description": "Fresh yellowtail served as sushi, a delicate and flavorful treat.",
+      "price": 1250,
+      "imageUrl": "",
+      "uuid": "88336284-c8a0-43d8-bfa0-d412050b987f"
+    },
+    {
+      "section": "Sushi and Sashimi (Available for Dinner Mon-Sat) (Available for Lunch Mon-Fri)",
+      "name": "Squid Sashimi (5pcs)",
+      "description": "Fresh squid sliced into thin pieces, served raw.",
+      "price": 1875,
+      "imageUrl": "",
+      "uuid": "fc0be61b-ae28-4fe5-927f-b01ba1f87b48"
+    },
+    {
+      "section": "Sushi and Sashimi (Available for Dinner Mon-Sat) (Available for Lunch Mon-Fri)",
+      "name": "Deluxe Sashimi Combination",
+      "description": "Assortment of fresh, raw fish sliced into thin pieces, served with a variety of flavors.",
+      "price": 15000,
+      "imageUrl": "",
+      "uuid": "bce2cf67-e5c3-41d3-84f0-3ca5293b1a42"
+    },
+    {
+      "section": "Sushi and Sashimi (Available for Dinner Mon-Sat) (Available for Lunch Mon-Fri)",
+      "name": "Squid Sushi (2pcs)",
+      "description": "Fresh squid wrapped in sushi rice.",
+      "price": 1125,
+      "imageUrl": "",
+      "uuid": "b4f24f5b-9818-4eb5-a813-1f3432f594a9"
+    },
+    {
+      "section": "Sushi and Sashimi (Available for Dinner Mon-Sat) (Available for Lunch Mon-Fri)",
+      "name": "Flounder Sashimi (5pcs)",
+      "description": "Fresh flounder sliced into thin pieces, served raw.",
+      "price": 1875,
+      "imageUrl": "",
+      "uuid": "e773a219-849f-4f77-a7b6-d5347ce8de93"
+    },
+    {
+      "section": "Sushi and Sashimi (Available for Dinner Mon-Sat) (Available for Lunch Mon-Fri)",
+      "name": "Special Sushi Combination",
+      "description": "Assorted sushi pieces, a delightful combination.",
+      "price": 15000,
+      "imageUrl": "",
+      "uuid": "377f6dae-624a-45bf-aca2-0fdcd3740b85"
+    },
+    {
+      "section": "Sushi and Sashimi (Available for Dinner Mon-Sat) (Available for Lunch Mon-Fri)",
+      "name": "Regular Sashimi Combination",
+      "description": "Assorted raw fish sliced into thin pieces, served fresh.",
+      "price": 11250,
+      "imageUrl": "",
+      "uuid": "62c64ff4-0351-42a4-9caa-56de7e970b7f"
+    },
+    {
+      "section": "Sushi and Sashimi (Available for Dinner Mon-Sat) (Available for Lunch Mon-Fri)",
+      "name": "Special Sashimi Combination",
+      "description": "Assortment of fresh, raw fish sliced into thin pieces.",
+      "price": 21250,
+      "imageUrl": "",
+      "uuid": "1533c218-c323-4ca3-97df-f3067f9dd2ff"
+    },
+    {
+      "section": "Sushi and Sashimi (Available for Dinner Mon-Sat) (Available for Lunch Mon-Fri)",
+      "name": "Regular Sushi & Sashimi Combination",
+      "description": "Assortment of sushi and sashimi pieces, served together.",
+      "price": 13100,
+      "imageUrl": "",
+      "uuid": "dbb1a73c-13c5-40c3-b6d7-47c59517ca00"
+    },
+    {
+      "section": "Sushi and Sashimi (Available for Dinner Mon-Sat) (Available for Lunch Mon-Fri)",
+      "name": "Special Sushi & Sashimi Combination",
+      "description": "Assortment of sushi and sashimi pieces, served together.",
+      "price": 17500,
+      "imageUrl": "",
+      "uuid": "377ff4ba-d6b8-4b78-9628-7ab1e8eb4e2d"
+    },
+    {
+      "section": "Sushi and Sashimi (Available for Dinner Mon-Sat) (Available for Lunch Mon-Fri)",
+      "name": "Tuna Sashimi (5pcs)",
+      "description": "Fresh tuna sliced into thin pieces, served raw.",
+      "price": 2125,
+      "imageUrl": "",
+      "uuid": "5d3bb591-03b2-406c-975c-95ce4f64ea3a"
+    },
+    {
+      "section": "Sushi and Sashimi (Available for Dinner Mon-Sat) (Available for Lunch Mon-Fri)",
+      "name": "Yellowtail Sashimi (5pcs)",
+      "description": "Fresh and delicate yellowtail slices served raw.",
+      "price": 2125,
+      "imageUrl": "",
+      "uuid": "94b8a51d-4c84-4f45-851d-41528b4a6e06"
+    },
+    {
+      "section": "Sushi and Sashimi (Available for Dinner Mon-Sat) (Available for Lunch Mon-Fri)",
+      "name": "Flounder Sushi (2pcs)",
+      "description": "Mild, lean flounder sushi. Two pieces.",
+      "price": 1125,
+      "imageUrl": "",
+      "uuid": "6e7a63d1-b607-4e45-b82b-2d7ef3858636"
+    },
+    {
+      "section": "Sushi and Sashimi (Available for Dinner Mon-Sat) (Available for Lunch Mon-Fri)",
+      "name": "Red Snapper Sushi (2pcs)",
+      "description": "Fresh red snapper served as sushi, a delicate and flavorful treat.",
+      "price": 1125,
+      "imageUrl": "",
+      "uuid": "b90e589c-50bd-403f-98dd-a0fa2f67f3df"
+    },
+    {
+      "section": "Sushi and Sashimi (Available for Dinner Mon-Sat) (Available for Lunch Mon-Fri)",
+      "name": "Red Snapper Sashimi",
+      "description": "Fresh raw red snapper sliced into thin pieces.",
+      "price": 1875,
+      "imageUrl": "",
+      "uuid": "1e9a17ea-f4a0-47df-b9b2-d6880fdab1e7"
+    },
+    {
+      "section": "Sushi and Sashimi (Available for Dinner Mon-Sat) (Available for Lunch Mon-Fri)",
+      "name": "Octopus Sushi (2pcs)",
+      "description": "Tender pieces of octopus served on sushi rice.",
+      "price": 1125,
+      "imageUrl": "",
+      "uuid": "26406ba6-85d1-495e-94f8-711b24c20934"
+    },
+    {
+      "section": "Sushi and Sashimi (Available for Dinner Mon-Sat) (Available for Lunch Mon-Fri)",
+      "name": "Mackerel Sushi (2pcs)",
+      "description": "Fresh mackerel served on vinegared rice.",
+      "price": 1125,
+      "imageUrl": "",
+      "uuid": "ec077646-d048-4b9f-80c1-4233cafac070"
+    },
+    {
+      "section": "Sushi and Sashimi (Available for Dinner Mon-Sat) (Available for Lunch Mon-Fri)",
+      "name": "Mackerel Sashimi (5pcs)",
+      "description": "Fresh mackerel sliced into thin pieces, served raw.",
+      "price": 1875,
+      "imageUrl": "",
+      "uuid": "99c45dbb-e1b7-492b-be09-6daa0f9e45da"
+    },
+    {
+      "section": "Sushi and Sashimi (Available for Dinner Mon-Sat) (Available for Lunch Mon-Fri)",
+      "name": "Shrimp Sushi (2pcs)",
+      "description": "Fresh shrimp wrapped in sushi rice.",
+      "price": 1125,
+      "imageUrl": "",
+      "uuid": "f147d597-281c-4f8f-9f64-add005b49cb0"
+    },
+    {
+      "section": "Sushi and Sashimi (Available for Dinner Mon-Sat) (Available for Lunch Mon-Fri)",
+      "name": "Shrimp Sashimi (5pcs)",
+      "description": "Fresh, raw shrimp sliced into thin pieces.",
+      "price": 1875,
+      "imageUrl": "",
+      "uuid": "994fa103-f87e-4e64-a8da-7f7bd56603cc"
+    },
+    {
+      "section": "Sushi and Sashimi (Available for Dinner Mon-Sat) (Available for Lunch Mon-Fri)",
+      "name": "fresh water eel sushi (2pcs)",
+      "description": "Freshwater eel served as sushi, a delicate and refreshing treat.",
+      "price": 1250,
+      "imageUrl": "",
+      "uuid": "442fb22a-a5b6-4f81-81bc-5b7d635dbeba"
+    },
+    {
+      "section": "Sushi and Sashimi (Available for Dinner Mon-Sat) (Available for Lunch Mon-Fri)",
+      "name": "fresh water eel sashimi (5pcs)",
+      "description": "Thinly sliced fresh water eel served raw.",
+      "price": 2125,
+      "imageUrl": "",
+      "uuid": "29d1b69e-f68b-4282-9770-e6f8c152d1e7"
+    },
+    {
+      "section": "Sushi and Sashimi (Available for Dinner Mon-Sat) (Available for Lunch Mon-Fri)",
+      "name": "Salmon Roe Sushi (2pcs)",
+      "description": "Fresh salmon roe on sushi rice.",
+      "price": 1125,
+      "imageUrl": "",
+      "uuid": "647adf90-4062-43d5-a168-3b17295f75fd"
+    },
+    {
+      "section": "Sushi and Sashimi (Available for Dinner Mon-Sat) (Available for Lunch Mon-Fri)",
+      "name": "Smelt Fish Roe Sushi (2pcs)",
+      "description": "Smelt roe over sushi rice. 2 pieces.",
+      "price": 1125,
+      "imageUrl": "",
+      "uuid": "dacd566e-6fff-46ba-90fc-e140719fde94"
+    },
+    {
+      "section": "Sushi and Sashimi (Available for Dinner Mon-Sat) (Available for Lunch Mon-Fri)",
+      "name": "Sunshine Roll",
+      "description": "Spicy tuna, cucumber roll topped with fresh salmon and avocado",
+      "price": 1800,
+      "imageUrl": "",
+      "uuid": "b667b5fe-bc7e-4815-bb97-1299cb96055f"
+    },
+    {
+      "section": "Sushi and Sashimi (Available for Dinner Mon-Sat) (Available for Lunch Mon-Fri)",
+      "name": "Big Mama Roll",
+      "description": "Soft shell crab, cream cheese, cucumber roll topped with spicy tuna, crabmeat, and crunch served with spicy mayo, eel sauce",
+      "price": 1800,
+      "imageUrl": "",
+      "uuid": "01ec11f0-2fcb-41ae-a676-83ea5c3d66c3"
+    },
+    {
+      "section": "Sushi and Sashimi (Available for Dinner Mon-Sat) (Available for Lunch Mon-Fri)",
+      "name": "Dark Samurai Roll",
+      "description": "Shrimp tempura, spicy crab roll topped with eel, avocado, spicy mayo, hot sauce and eel sauce.",
+      "price": 1800,
+      "imageUrl": "",
+      "uuid": "6b18fb5c-25e5-4a72-a98d-842246b4635f"
+    },
+    {
+      "section": "Sushi and Sashimi (Available for Dinner Mon-Sat) (Available for Lunch Mon-Fri)",
+      "name": "Panic Roll",
+      "description": "Spicy tuna roll topped with spicy crab, jalapeno, and hot sauce",
+      "price": 1700,
+      "imageUrl": "",
+      "uuid": "d9c87c6e-065b-43a1-8e03-59bdc7209b41"
+    },
+    {
+      "section": "Sushi and Sashimi (Available for Dinner Mon-Sat) (Available for Lunch Mon-Fri)",
+      "name": "Royal Ln Deep Fried Roll",
+      "description": "Salmon, crabmeat, avocado, cream cheese roll whole fried with spicy mayo, wasabi sauce, and eel sauce",
+      "price": 1700,
+      "imageUrl": "",
+      "uuid": "3ae467aa-f0cb-4635-a727-c64c480b82a6"
+    },
+    {
+      "section": "Sushi and Sashimi (Available for Dinner Mon-Sat) (Available for Lunch Mon-Fri)",
+      "name": "Summer Time Roll (no rice)",
+      "description": "Tuna, salmon, yellowtail, crabmeat, avocado, wrapped with cucumber served with mustard",
+      "price": 1800,
+      "imageUrl": "",
+      "uuid": "b8e5fe64-b25e-4419-a075-e18a1bb66225"
+    },
+    {
+      "section": "Sushi and Sashimi (Available for Dinner Mon-Sat) (Available for Lunch Mon-Fri)",
+      "name": "Valentine Roll (no rice)",
+      "description": "Fresh salmon, avocado, wrapped with soy paper, crabmeat outside. spicy mayo, eel sauce.",
+      "price": 1800,
+      "imageUrl": "",
+      "uuid": "76d64a19-6b84-4108-bbea-153bf7e9db2e"
+    },
+    {
+      "section": "Sushi and Sashimi (Available for Dinner Mon-Sat) (Available for Lunch Mon-Fri)",
+      "name": "Salmon Roe Sashimi (5pcs)",
+      "description": "Fresh salmon roe served raw in five pieces.",
+      "price": 1875,
+      "imageUrl": "",
+      "uuid": "185d405c-4da5-46e9-8721-9809f33bdbbe"
+    },
+    {
+      "section": "Sushi and Sashimi (Available for Dinner Mon-Sat) (Available for Lunch Mon-Fri)",
+      "name": "Smelt Fish Roe Sashimi (5pcs)",
+      "description": "Smelt fish roe served raw as sashimi. 5 pieces.",
+      "price": 1875,
+      "imageUrl": "",
+      "uuid": "e7e6f3e8-d4f4-4a58-9d2e-e8c110cf45bf"
+    },
+    {
+      "section": "Sushi and Sashimi (Available for Dinner Mon-Sat) (Available for Lunch Mon-Fri)",
+      "name": "Flying Fish Egg Sashimi (5pcs)",
+      "description": "Fresh flying fish eggs served raw.",
+      "price": 1875,
+      "imageUrl": "",
+      "uuid": "e1035cba-1463-4947-9a61-5bb09cb2d952"
+    },
+    {
+      "section": "Noodles",
+      "name": "Udon",
+      "description": "Thick wheat noodles in a savory broth topped with scallions.",
+      "price": 1799,
+      "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/ba2a59708bfe61fe6b95ac80b9c17290/0fb376d1da56c05644450062d25c5c84.jpeg",
+      "uuid": "4dfcb8ab-cdd9-4a1e-ba4f-9fa144f87738"
+    },
+    {
+      "section": "Noodles",
+      "name": "LA Galbi and Bibim Naengmyun",
+      "description": "Thinly sliced LA-style short ribs served with spicy cold noodles.",
+      "price": 2999,
+      "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/5f481d834e1e0eaec31987452bcd699d/3093d07d5a810674a6d7adf26679874b.jpeg",
+      "uuid": "a2466a4b-7768-464b-98c9-02dad639bd97"
+    },
+    {
+      "section": "Noodles",
+      "name": "Bibim Guksu",
+      "description": "Thin somen noodles over the fresh vegetables with spicy sauce.",
+      "price": 1499,
+      "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/a5b3fd443c8e04eb168dd2bcc8025c98/3093d07d5a810674a6d7adf26679874b.jpeg",
+      "uuid": "3b0176f9-05de-4318-8bef-efef941a96cf"
+    },
+    {
+      "section": "Noodles",
+      "name": "Bibim Naengmysun",
+      "description": "Buckwheat noodles, sliced meat, and vegetables. Served in cold beef broth.",
+      "price": 1499,
+      "imageUrl": "",
+      "uuid": "4d296e79-73d6-40ca-b9ba-219477ef4917"
+    },
+    {
+      "section": "Noodles",
+      "name": "Mul Naengmysun",
+      "description": "Buckwheat noodles, sliced meat, and vegetables. Served in cold beef broth.",
+      "price": 1399,
+      "imageUrl": "",
+      "uuid": "f0cba59b-d9ef-403e-831e-7690eacf9490"
+    },
+    {
+      "section": "Noodles",
+      "name": "Ramen",
+      "description": "Japanese-style wheat noodles in savory broth.",
+      "price": 1199,
+      "imageUrl": "",
+      "uuid": "81a717f3-037a-4ee6-a1c0-6212cae53eb9"
+    },
+    {
+      "section": "Noodles",
+      "name": "Jjhampong",
+      "description": "Spicy seafood noodle soup.",
+      "price": 1699,
+      "imageUrl": "",
+      "uuid": "56c0521b-3540-4e8f-b36c-6831c0c745ba"
+    },
+    {
+      "section": "Noodles",
+      "name": "Bulgogi and Bibim Naengmyun",
+      "description": "Thinly sliced marinated beef served with spicy cold noodles.",
+      "price": 2699,
+      "imageUrl": "",
+      "uuid": "c4d1b71f-bf16-41a6-bcab-405bd362c568"
+    },
+    {
+      "section": "Noodles",
+      "name": "LA Galbi and Mul Naengmyun",
+      "description": "Thinly sliced LA-style short ribs served with cold buckwheat or starch noodles.",
+      "price": 2999,
+      "imageUrl": "",
+      "uuid": "d6b3d9ae-0451-49b3-90e6-764f3e2eb27d"
+    },
+    {
+      "section": "Noodles",
+      "name": "Bulgogi and Mul Naengmyum",
+      "description": "Thinly sliced marinated beef served with cold noodles and a refreshing broth.",
+      "price": 2699,
+      "imageUrl": "",
+      "uuid": "626825ab-f491-47c2-a70a-ab3fc5c0ffb5"
+    },
+    {
+      "section": "Noodles",
+      "name": "Spicy Baby Back Ribs and Bibim Naengmyun",
+      "description": "Tender baby back ribs served with spicy Bibim Naengmyun noodles.",
+      "price": 2799,
+      "imageUrl": "",
+      "uuid": "815e95b4-3ef5-4b8d-8b4d-4e695144a1c6"
+    },
+    {
+      "section": "Noodles",
+      "name": "Yakisoba",
+      "description": "Wok tossed noodles and vegetables.",
+      "price": 1599,
+      "imageUrl": "",
+      "uuid": "234e075d-a223-420d-8fe6-9ef2867f3a37"
+    },
+    {
+      "section": "Noodles",
+      "name": "Spicy Baby Back Ribs and Mul Naengmyun",
+      "description": "Tender baby back ribs served with a refreshing cold noodle dish, Mul Naengmyun.",
+      "price": 2799,
+      "imageUrl": "",
+      "uuid": "ac517c85-dba9-4508-9961-c1c775dd0372"
+    },
+    {
+      "section": "Dinners (Serves 2)",
+      "name": "Bulgogi Jungsik",
+      "description": "Served with shrimp tempura, mandu, japchae, grilled fish, doenjang, kimchi, and variety of side dishes. Served two.",
+      "price": 6999,
+      "imageUrl": "",
+      "uuid": "327b9d2a-5e7b-4c21-b997-f27f46a18874"
+    },
+    {
+      "section": "Dinners (Serves 2)",
+      "name": "Gui Jungsik",
+      "description": "Served with California roll, chapchae, barbeque, dolsot bibimbap, kimchi, and variety of side dishes. Served two.",
+      "price": 5999,
+      "imageUrl": "",
+      "uuid": "ea594e88-d7a4-4295-a876-d3ac3d1326cc"
+    }
+  ]
+}

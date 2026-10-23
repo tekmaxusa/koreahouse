@@ -49,35 +49,35 @@ export const MenuPage: React.FC<MenuPageProps> = ({ onOpenOrderModal }) => {
   return (
     <div className="flex flex-col min-h-screen min-w-0 w-full">
       {/* Page Header */}
-      <section className="bg-[#12151c] border-b border-[#1d222e] py-14 px-4 sm:px-6 lg:px-8">
+      <section className="bg-[#F8FAFC] border-b border-[#E2E8F0] py-14 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:items-end justify-between gap-6">
           <div>
-            <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs sm:text-sm uppercase tracking-[0.15em] sm:tracking-[0.25em] text-[#d4af37] font-semibold mb-2">
+            <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs sm:text-sm uppercase tracking-[0.15em] sm:tracking-[0.25em] text-[#2563EB] font-semibold mb-2">
               <span>Authentic Recipes</span>
-              <span aria-hidden="true" className="text-[#3c4456] hidden sm:inline">·</span>
+              <span aria-hidden="true" className="text-[#CBD5E1] hidden sm:inline">·</span>
               <span className="hidden sm:inline">Prepared Fresh Daily</span>
             </div>
-            <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-white tracking-tight">
+            <h1 className="page-heading text-3xl sm:text-4xl md:text-5xl tracking-tight">
               Restaurant Menu
             </h1>
-            <p className="mt-3 text-base sm:text-lg text-[#9aa2b2] max-w-2xl leading-relaxed">
-              Same categories, item names, prices, and photos as our DoorDash menu. Order online for delivery or call for dine-in and pickup.
+            <p className="page-subheading mt-3 max-w-2xl">
+              Same categories, item names, prices, and photos as our Uber Eats menu. Order online for pickup or call for dine-in and takeout.
             </p>
           </div>
 
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 sm:gap-3 w-full md:w-auto shrink-0">
             <a
               href={`tel:${RESTAURANT_INFO.phoneRaw}`}
-              className="px-4 py-2.5 bg-[#1a1f2b] border border-[#2c3344] hover:bg-[#232938] text-[#f2efe9] text-sm font-semibold rounded-md transition-colors flex items-center justify-center gap-2"
+              className="px-4 py-2.5 bg-[#EFF6FF] border border-[#CBD5E1] hover:bg-[#E2E8F0] text-[#0F172A] text-sm font-semibold rounded-md transition-colors flex items-center justify-center gap-2"
             >
-              <Phone className="w-3.5 h-3.5 text-[#d4af37]" />
+              <Phone className="w-3.5 h-3.5 text-[#2563EB]" />
               <span>(972) 243-0434</span>
             </a>
             <a
               href={RESTAURANT_INFO.onlineOrderUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-4 py-2.5 bg-[#9e2a2b] hover:bg-[#b03032] text-white text-sm font-semibold rounded-md transition-colors text-center"
+              className="px-4 py-2.5 bg-[#F97316] hover:bg-[#FB923C] text-white text-sm font-semibold rounded-md transition-colors text-center"
             >
               Order Online
             </a>
@@ -87,25 +87,25 @@ export const MenuPage: React.FC<MenuPageProps> = ({ onOpenOrderModal }) => {
 
       {/* Menu Controls: Search & Category Tabs */}
       <section
-        className="sticky z-30 bg-[#0f1115]/95 backdrop-blur-md border-b border-[#1d222e] py-4"
+        className="sticky z-30 bg-[#FFFFFF]/95 backdrop-blur-md border-b border-[#E2E8F0] py-4"
         style={{ top: 'var(--site-header-height, 4.5rem)' }}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-4">
           <div className="flex flex-col md:flex-row items-stretch md:items-center justify-between gap-4">
             {/* Search Input */}
             <div className="relative flex-1 max-w-md">
-              <Search className="w-4 h-4 text-[#758092] absolute left-3.5 top-1/2 -translate-y-1/2" />
+              <Search className="w-4 h-4 text-[#64748B] absolute left-3.5 top-1/2 -translate-y-1/2" />
               <input
                 type="text"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 placeholder="Search dishes (e.g. Galbi, Bibimbap, Sushi, Tuna)..."
-                className="w-full pl-10 pr-9 py-2.5 bg-[#161a24] border border-[#262c3b] rounded-lg text-base text-white placeholder-[#687285] focus:outline-none focus:border-[#d4af37] transition-colors"
+                className="w-full pl-10 pr-9 py-2.5 bg-[#FFFFFF] border border-[#CBD5E1] rounded-lg text-base text-[#0F172A] placeholder-[#94A3B8] focus:outline-none focus:border-[#2563EB] transition-colors"
               />
               {searchQuery && (
                 <button
                   onClick={() => setSearchQuery('')}
-                  className="absolute right-3 top-1/2 -translate-y-1/2 text-[#758092] hover:text-white"
+                  className="absolute right-3 top-1/2 -translate-y-1/2 text-[#64748B] hover:text-[#1E40AF]"
                   aria-label="Clear search"
                 >
                   <X className="w-4 h-4" />
@@ -115,16 +115,16 @@ export const MenuPage: React.FC<MenuPageProps> = ({ onOpenOrderModal }) => {
 
             {/* Quick Filters */}
             <div className="flex items-center gap-2 text-sm">
-              <span className="text-[#8a92a3] hidden sm:inline flex items-center gap-1 font-medium">
-                <Filter className="w-3 h-3 text-[#d4af37]" />
+              <span className="text-[#64748B] hidden sm:inline flex items-center gap-1 font-medium">
+                <Filter className="w-3 h-3 text-[#2563EB]" />
                 <span>Filters:</span>
               </span>
               <button
                 onClick={() => setSignatureOnly(!signatureOnly)}
                 className={`px-3 py-1.5 rounded-md font-medium transition-colors ${
                   signatureOnly
-                    ? 'bg-[#d4af37] text-black font-semibold'
-                    : 'bg-[#181d28] border border-[#2b3344] text-[#a2aab8] hover:text-white'
+                    ? 'bg-[#2563EB] text-black font-semibold'
+                    : 'bg-[#FFFFFF] border border-[#CBD5E1] text-[#64748B] hover:text-[#1E40AF]'
                 }`}
               >
                 House Specialties
@@ -133,8 +133,8 @@ export const MenuPage: React.FC<MenuPageProps> = ({ onOpenOrderModal }) => {
                 onClick={() => setSpicyOnly(!spicyOnly)}
                 className={`px-3 py-1.5 rounded-md font-medium transition-colors ${
                   spicyOnly
-                    ? 'bg-[#9e2a2b] text-white font-semibold'
-                    : 'bg-[#181d28] border border-[#2b3344] text-[#a2aab8] hover:text-white'
+                    ? 'bg-[#F97316] text-white font-semibold'
+                    : 'bg-[#FFFFFF] border border-[#CBD5E1] text-[#64748B] hover:text-[#1E40AF]'
                 }`}
               >
                 Spicy Dishes
@@ -147,7 +147,7 @@ export const MenuPage: React.FC<MenuPageProps> = ({ onOpenOrderModal }) => {
                     setSpicyOnly(false);
                     setSignatureOnly(false);
                   }}
-                  className="px-2.5 py-1.5 text-sm text-[#d4af37] hover:underline whitespace-nowrap ml-1"
+                  className="px-2.5 py-1.5 text-sm text-[#2563EB] hover:underline whitespace-nowrap ml-1"
                 >
                   Reset all
                 </button>
@@ -166,8 +166,8 @@ export const MenuPage: React.FC<MenuPageProps> = ({ onOpenOrderModal }) => {
                   title={cat}
                   className={`px-3.5 sm:px-4 py-2.5 rounded-md font-medium whitespace-nowrap shrink-0 snap-start transition-all ${
                     isActive
-                      ? 'bg-[#d4af37] text-black font-semibold shadow-md'
-                      : 'bg-[#151922] text-[#9aa2b2] hover:text-white hover:bg-[#1f2533] border border-[#232938]'
+                      ? 'bg-[#2563EB] text-black font-semibold shadow-md'
+                      : 'bg-[#F1F5F9] text-[#64748B] hover:text-[#1E40AF] hover:bg-[#EFF6FF] border border-[#E2E8F0]'
                   }`}
                 >
                   {menuCategoryLabel(cat)}
@@ -181,30 +181,30 @@ export const MenuPage: React.FC<MenuPageProps> = ({ onOpenOrderModal }) => {
       {/* Menu Grid Content */}
       <section className="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full flex-1">
         {/* Active status indicator & results count */}
-        <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between mb-8 pb-3 border-b border-[#1c212c] text-sm text-[#828a9b]">
+        <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between mb-8 pb-3 border-b border-[#E2E8F0] text-sm text-[#64748B]">
           <div className="min-w-0">
-            Showing <span className="font-semibold text-white tabular-nums">{filteredItems.length}</span> items
+            Showing <span className="font-semibold text-[#1E40AF] tabular-nums">{filteredItems.length}</span> items
             {activeCategory !== 'All' && (
               <span>
                 {' '}
-                in <strong className="text-[#d4af37]">{menuCategoryLabel(activeCategory, 'full')}</strong>
+                in <strong className="text-[#2563EB]">{menuCategoryLabel(activeCategory, 'full')}</strong>
               </span>
             )}
-            {searchQuery && <span> matching &ldquo;<span className="text-white">{searchQuery}</span>&rdquo;</span>}
+            {searchQuery && <span> matching &ldquo;<span className="text-[#1E40AF] font-medium">{searchQuery}</span>&rdquo;</span>}
           </div>
-          <div className="text-xs sm:text-sm text-[#717a8c] italic sm:text-right sm:max-w-md shrink-0">
-            *Synced with DoorDash Korea House — prices and availability may change on delivery apps.
+          <div className="text-xs sm:text-sm text-[#64748B] italic sm:text-right sm:max-w-md shrink-0">
+            *Synced with Uber Eats Korea House — prices and availability may change on delivery apps.
           </div>
         </div>
 
         {/* Empty State */}
         {filteredItems.length === 0 ? (
-          <div className="py-20 text-center flex flex-col items-center justify-center bg-[#13161f] border border-[#232938] rounded-xl p-8">
-            <div className="p-4 bg-[#1f2533] rounded-full text-[#d4af37] mb-3">
+          <div className="py-20 text-center flex flex-col items-center justify-center bg-[#F8FAFC] border border-[#E2E8F0] rounded-xl p-8">
+            <div className="p-4 bg-[#EFF6FF] rounded-full text-[#2563EB] mb-3">
               <UtensilsCrossed className="w-8 h-8" />
             </div>
-            <h3 className="font-serif text-xl font-bold text-white">No menu items found</h3>
-            <p className="text-sm text-[#8a92a3] mt-1 max-w-md">
+            <h3 className="font-serif text-xl font-bold text-[#0F172A]">No menu items found</h3>
+            <p className="text-sm text-[#64748B] mt-1 max-w-md">
               Try adjusting your search keywords or switching category filters.
             </p>
             <button
@@ -214,7 +214,7 @@ export const MenuPage: React.FC<MenuPageProps> = ({ onOpenOrderModal }) => {
                 setSpicyOnly(false);
                 setSignatureOnly(false);
               }}
-              className="mt-5 px-5 py-2.5 bg-[#1f2533] hover:bg-[#2a3245] text-white text-xs font-semibold rounded-md border border-[#343e54] transition-colors"
+              className="mt-5 px-5 py-2.5 bg-[#EFF6FF] hover:bg-[#DBEAFE] text-[#1E40AF] text-sm font-semibold rounded-md border border-[#94A3B8] transition-colors"
             >
               Reset Filters
             </button>
@@ -226,7 +226,7 @@ export const MenuPage: React.FC<MenuPageProps> = ({ onOpenOrderModal }) => {
                 key={item.id}
                 item={item}
                 onSelect={(selected: MenuItem) =>
-                  onOpenOrderModal(selected.doordashName ?? selected.name)
+                  onOpenOrderModal(selected.uberEatsName ?? selected.name)
                 }
               />
             ))}
@@ -235,16 +235,16 @@ export const MenuPage: React.FC<MenuPageProps> = ({ onOpenOrderModal }) => {
       </section>
 
       {/* Korean Banchan Note */}
-      <section className="bg-[#12151d] border-t border-[#1d222e] py-12 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto bg-[#171b26] border border-[#282f42] rounded-xl p-6 sm:p-8 flex flex-col sm:flex-row items-center gap-6">
-          <div className="w-16 h-16 rounded-full bg-[#9e2a2b]/20 border border-[#9e2a2b]/40 flex items-center justify-center shrink-0">
-            <span className="font-serif text-2xl font-bold text-[#ff8080]">반찬</span>
+      <section className="bg-[#EFF6FF] border-t border-[#E2E8F0] py-12 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto bg-[#FFFFFF] border border-[#CBD5E1] rounded-xl p-6 sm:p-8 flex flex-col sm:flex-row items-center gap-6">
+          <div className="w-16 h-16 rounded-full bg-[#F97316]/20 border border-[#F97316]/40 flex items-center justify-center shrink-0">
+            <span className="font-serif text-2xl font-bold text-[#FB923C]">반찬</span>
           </div>
           <div>
-            <h3 className="font-serif text-xl font-bold text-white">
+            <h3 className="font-serif text-xl font-bold text-[#0F172A]">
               Complimentary Banchan with Every Korean Entree
             </h3>
-            <p className="text-xs sm:text-sm text-[#9aa2b2] mt-1.5 leading-relaxed">
+            <p className="text-xs sm:text-sm text-[#64748B] mt-1.5 leading-relaxed">
               At Korea House, every Korean BBQ and stew entree is served with our rotating assortment of house-made side dishes: freshly fermented napa cabbage kimchi, seasoned bean sprouts, braised sweet potatoes, pickled radish, and steamed rice.
             </p>
           </div>

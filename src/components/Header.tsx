@@ -56,28 +56,28 @@ export const Header: React.FC = () => {
       ref={headerRef}
       className={`sticky top-0 z-40 w-full max-w-[100vw] transition-all duration-200 border-b ${
         scrolled
-          ? 'bg-[#0f1115]/95 backdrop-blur-md border-[#232733] shadow-lg shadow-black/40 py-3'
-          : 'bg-[#0f1115] border-[#1d212b] py-4'
+          ? 'bg-[#FFFFFF]/95 backdrop-blur-md border-[#E2E8F0] shadow-lg shadow-blue-900/10 py-3'
+          : 'bg-[#FFFFFF] border-[#BFDBFE] py-4'
       }`}
     >
       {/* Top micro-bar for quick address and hours */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-2 hidden md:flex items-center justify-between text-xs text-[#9aa2b2] border-b border-[#1c202a] pb-2">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-2 hidden md:flex items-center justify-between text-xs text-[#64748B] border-b border-[#E2E8F0] pb-2">
         <div className="flex items-center gap-6">
-          <span className="flex items-center gap-1.5 hover:text-[#d4af37] transition-colors">
-            <MapPin className="w-3.5 h-3.5 text-[#d4af37]" />
+          <span className="flex items-center gap-1.5 hover:text-[#2563EB] transition-colors">
+            <MapPin className="w-3.5 h-3.5 text-[#2563EB]" />
             <span>2598 Royal Lane, Dallas, TX 75229</span>
           </span>
           <span className="flex items-center gap-1.5">
-            <Clock className="w-3.5 h-3.5 text-[#d4af37]" />
+            <Clock className="w-3.5 h-3.5 text-[#2563EB]" />
             <span>Open Daily 11:00 AM – 10:00 PM</span>
           </span>
         </div>
         <div className="flex items-center gap-3">
-          <span className="text-[#c59b27] font-medium tracking-wide">Serving Dallas Koreatown Since 1979</span>
-          <span aria-hidden="true" className="text-[#3a4152]">·</span>
+          <span className="text-[#2563EB] font-medium tracking-wide">Serving Dallas Koreatown Since 1979</span>
+          <span aria-hidden="true" className="text-[#CBD5E1]">·</span>
           <a
             href={`tel:${RESTAURANT_INFO.phoneRaw}`}
-            className="hover:text-white transition-colors font-medium text-[#d4af37]"
+            className="hover:text-[#1E40AF] transition-colors font-medium text-[#2563EB]"
           >
             {RESTAURANT_INFO.phone}
           </a>
@@ -88,16 +88,16 @@ export const Header: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-3 sm:gap-6 min-w-0">
         {/* Zone 1: Brand Wordmark */}
         <Link to="/" className="flex flex-col min-w-0 max-w-[55%] sm:max-w-none shrink group">
-          <span className="font-serif text-lg sm:text-2xl font-bold tracking-tight text-[#f5f2eb] group-hover:text-[#d4af37] transition-colors truncate sm:whitespace-nowrap">
+          <span className="font-serif text-lg sm:text-2xl font-bold tracking-tight text-[#0F172A] group-hover:text-[#2563EB] transition-colors truncate sm:whitespace-nowrap">
             KOREA HOUSE
           </span>
-          <span className="text-[10px] sm:text-xs tracking-[0.2em] uppercase text-[#b89535] font-semibold">
+          <span className="text-[10px] sm:text-xs tracking-[0.2em] uppercase text-[#EA580C] font-semibold">
             Korean Cuisine &amp; Sushi
           </span>
         </Link>
 
         {/* Zone 2: Navigation Links (Single line, text with clean active indicator) */}
-        <nav className="hidden lg:flex items-center gap-6 text-sm font-medium text-[#c0c6d4]">
+        <nav className="hidden lg:flex items-center gap-6 text-sm font-medium text-[#475569]">
           {navLinks.map((link) => {
             const isActive = location.pathname === link.path;
             return (
@@ -106,13 +106,13 @@ export const Header: React.FC = () => {
                 to={link.path}
                 className={`whitespace-nowrap shrink-0 transition-colors py-1 relative ${
                   isActive
-                    ? 'text-[#f5f2eb] font-semibold'
-                    : 'text-[#a2a9b8] hover:text-white'
+                    ? 'text-[#0F172A] font-semibold'
+                    : 'text-[#64748B] hover:text-[#1E40AF]'
                 }`}
               >
                 {link.label}
                 {isActive && (
-                  <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#d4af37] rounded-full" />
+                  <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#2563EB] rounded-full" />
                 )}
               </Link>
             );
@@ -123,16 +123,16 @@ export const Header: React.FC = () => {
         <div className="hidden sm:flex items-center gap-3 shrink-0">
           <a
             href={`tel:${RESTAURANT_INFO.phoneRaw}`}
-            className="hidden xl:inline-flex items-center gap-2 px-3.5 py-2 text-xs font-medium text-[#dcd6ca] bg-[#1a1d26] border border-[#2b3140] rounded-md hover:bg-[#232733] hover:text-white transition-colors whitespace-nowrap"
+            className="hidden xl:inline-flex items-center gap-2 px-3.5 py-2 text-xs font-medium text-[#334155] bg-[#F8FAFC] border border-[#CBD5E1] rounded-md hover:bg-[#E2E8F0] hover:text-[#1E40AF] transition-colors whitespace-nowrap"
           >
-            <Phone className="w-3.5 h-3.5 text-[#d4af37]" />
+            <Phone className="w-3.5 h-3.5 text-[#2563EB]" />
             <span>(972) 243-0434</span>
           </a>
           <a
             href={RESTAURANT_INFO.onlineOrderUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-4 py-2 text-xs font-semibold text-white bg-[#9e2a2b] hover:bg-[#b03032] active:bg-[#852324] rounded-md shadow-sm transition-all whitespace-nowrap shrink-0"
+            className="px-4 py-2 text-xs font-semibold text-white bg-[#F97316] hover:bg-[#FB923C] active:bg-[#EA580C] rounded-md shadow-sm transition-all whitespace-nowrap shrink-0"
           >
             Order Online
           </a>
@@ -144,13 +144,13 @@ export const Header: React.FC = () => {
             href={RESTAURANT_INFO.onlineOrderUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-3 py-1.5 text-xs font-semibold text-white bg-[#9e2a2b] hover:bg-[#b03032] rounded-md transition-colors whitespace-nowrap"
+            className="px-3 py-1.5 text-xs font-semibold text-white bg-[#F97316] hover:bg-[#FB923C] rounded-md transition-colors whitespace-nowrap"
           >
             Order
           </a>
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="p-2 text-[#c0c6d4] hover:text-white hover:bg-[#1a1d26] rounded-md transition-colors"
+            className="p-2 text-[#475569] hover:text-[#1E40AF] hover:bg-[#F8FAFC] rounded-md transition-colors"
             aria-label="Toggle navigation menu"
           >
             {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -161,7 +161,7 @@ export const Header: React.FC = () => {
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
         <div
-          className="lg:hidden fixed inset-x-0 bg-[#12151c] border-b border-[#232733] px-4 sm:px-6 py-6 shadow-2xl flex flex-col gap-4 z-50 overflow-y-auto"
+          className="lg:hidden fixed inset-x-0 bg-[#F8FAFC] border-b border-[#E2E8F0] px-4 sm:px-6 py-6 shadow-2xl flex flex-col gap-4 z-50 overflow-y-auto"
           style={{
             top: 'var(--site-header-height, 4.5rem)',
             maxHeight: 'calc(100dvh - var(--site-header-height, 4.5rem))',
@@ -176,8 +176,8 @@ export const Header: React.FC = () => {
                   to={link.path}
                   className={`px-3 py-2.5 rounded-md text-base font-medium transition-colors ${
                     isActive
-                      ? 'bg-[#1c202a] text-[#d4af37] font-semibold'
-                      : 'text-[#c0c6d4] hover:bg-[#181b24] hover:text-white'
+                      ? 'bg-[#E2E8F0] text-[#2563EB] font-semibold'
+                      : 'text-[#475569] hover:bg-[#EFF6FF] hover:text-[#1E40AF]'
                   }`}
                 >
                   {link.label}
@@ -186,12 +186,12 @@ export const Header: React.FC = () => {
             })}
           </div>
 
-          <div className="pt-4 border-t border-[#232733] flex flex-col gap-3">
+          <div className="pt-4 border-t border-[#E2E8F0] flex flex-col gap-3">
             <a
               href={`tel:${RESTAURANT_INFO.phoneRaw}`}
-              className="flex items-center justify-center gap-2 w-full py-3 text-sm font-medium text-[#f5f2eb] bg-[#1c202a] border border-[#2b3140] rounded-md hover:bg-[#252b38] transition-colors"
+              className="flex items-center justify-center gap-2 w-full py-3 text-sm font-medium text-[#0F172A] bg-[#E2E8F0] border border-[#CBD5E1] rounded-md hover:bg-[#EFF6FF] transition-colors"
             >
-              <Phone className="w-4 h-4 text-[#d4af37]" />
+              <Phone className="w-4 h-4 text-[#2563EB]" />
               <span>Call (972) 243-0434</span>
             </a>
             <a
@@ -199,11 +199,11 @@ export const Header: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setMobileMenuOpen(false)}
-              className="w-full py-3 text-sm font-semibold text-white bg-[#9e2a2b] hover:bg-[#b03032] rounded-md transition-colors text-center"
+              className="w-full py-3 text-sm font-semibold text-white bg-[#F97316] hover:bg-[#FB923C] rounded-md transition-colors text-center"
             >
               Order Online
             </a>
-            <div className="text-center text-xs text-[#828a9b] mt-2">
+            <div className="text-center text-xs text-[#64748B] mt-2">
               <p>2598 Royal Lane, Dallas, TX 75229</p>
               <p className="mt-0.5">Open Daily 11:00 AM – 10:00 PM</p>
             </div>

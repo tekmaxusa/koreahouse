@@ -58,17 +58,17 @@ export const ContactPage: React.FC = () => {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Header */}
-      <section className="bg-[#12151c] border-b border-[#1d222e] py-14 px-4 sm:px-6 lg:px-8">
+      <section className="bg-[#F8FAFC] border-b border-[#E2E8F0] py-14 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:items-end justify-between gap-6">
           <div>
-            <div className="flex items-center gap-2 text-xs uppercase tracking-[0.25em] text-[#d4af37] font-semibold mb-2">
-              <MapPin className="w-3.5 h-3.5 text-[#d4af37]" />
+            <div className="flex items-center gap-2 text-xs uppercase tracking-[0.25em] text-[#2563EB] font-semibold mb-2">
+              <MapPin className="w-3.5 h-3.5 text-[#2563EB]" />
               <span>Dallas Koreatown</span>
             </div>
-            <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-white tracking-tight">
+            <h1 className="page-heading text-3xl sm:text-4xl md:text-5xl tracking-tight">
               Contact &amp; Location
             </h1>
-            <p className="mt-3 text-sm text-[#9aa2b2] max-w-2xl leading-relaxed">
+            <p className="page-subheading mt-3 max-w-2xl">
               We are located at 2598 Royal Lane in Dallas, Texas. Stop by for authentic Korean BBQ and fresh sushi, call for hot takeout orders, or send us a message.
             </p>
           </div>
@@ -76,7 +76,7 @@ export const ContactPage: React.FC = () => {
           <div className="flex items-center gap-3 shrink-0">
             <a
               href={`tel:${RESTAURANT_INFO.phoneRaw}`}
-              className="px-5 py-3 bg-[#9e2a2b] hover:bg-[#b03032] text-white text-xs font-semibold rounded-md transition-colors flex items-center gap-2 shadow-md"
+              className="px-5 py-3 bg-[#F97316] hover:bg-[#FB923C] text-white text-xs font-semibold rounded-md transition-colors flex items-center gap-2 shadow-md"
             >
               <Phone className="w-4 h-4" />
               <span>Call (972) 243-0434</span>
@@ -91,22 +91,22 @@ export const ContactPage: React.FC = () => {
           {/* Left Column (5 cols): Restaurant Contact & Hours */}
           <div className="lg:col-span-5 flex flex-col gap-6">
             {/* Address Card */}
-            <div className="bg-[#151922] border border-[#232938] p-6 sm:p-8 rounded-xl flex flex-col gap-4">
-              <span className="text-xs uppercase tracking-widest text-[#d4af37] font-semibold flex items-center gap-1.5">
-                <MapPin className="w-4 h-4 text-[#d4af37]" />
+            <div className="bg-[#F1F5F9] border border-[#E2E8F0] p-6 sm:p-8 rounded-xl flex flex-col gap-4">
+              <span className="text-xs uppercase tracking-widest text-[#2563EB] font-semibold flex items-center gap-1.5">
+                <MapPin className="w-4 h-4 text-[#2563EB]" />
                 <span>Restaurant Location</span>
               </span>
 
               <div>
-                <h3 className="font-serif text-xl font-bold text-white">
+                <h3 className="font-serif text-xl font-bold text-[#0F172A]">
                   Korea House Korean Cuisine &amp; Sushi
                 </h3>
-                <p className="text-sm text-[#a2aab8] mt-1">
+                <p className="text-sm text-[#64748B] mt-1">
                   2598 Royal Lane
                   <br />
                   Dallas, TX 75229
                 </p>
-                <p className="text-xs text-[#717a8c] mt-0.5">
+                <p className="text-xs text-[#64748B] mt-0.5">
                   Asian Trade District / Royal Lane Koreatown
                 </p>
               </div>
@@ -116,14 +116,14 @@ export const ContactPage: React.FC = () => {
                   href={RESTAURANT_INFO.googleMapsDirectionsUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-4 py-2 bg-[#1f2533] hover:bg-[#283144] border border-[#303a4e] text-xs font-semibold text-[#f2efe9] rounded-md transition-colors flex items-center gap-1.5"
+                  className="px-4 py-2 bg-[#EFF6FF] hover:bg-[#DBEAFE] border border-[#CBD5E1] text-xs font-semibold text-[#1E40AF] rounded-md transition-colors flex items-center gap-1.5"
                 >
-                  <ExternalLink className="w-3.5 h-3.5 text-[#d4af37]" />
+                  <ExternalLink className="w-3.5 h-3.5 text-[#2563EB]" />
                   <span>Get Directions</span>
                 </a>
                 <button
                   onClick={handleCopyAddress}
-                  className="px-4 py-2 bg-[#1a1e28] hover:bg-[#232836] border border-[#2a3244] text-xs font-medium text-[#c0c7d6] rounded-md transition-colors flex items-center gap-1.5"
+                  className="px-4 py-2 bg-[#EFF6FF] hover:bg-[#DBEAFE] border border-[#2a3244] text-xs font-medium text-[#c0c7d6] rounded-md transition-colors flex items-center gap-1.5"
                 >
                   {copied ? (
                     <>
@@ -132,7 +132,7 @@ export const ContactPage: React.FC = () => {
                     </>
                   ) : (
                     <>
-                      <Copy className="w-3.5 h-3.5 text-[#9aa2b2]" />
+                      <Copy className="w-3.5 h-3.5 text-[#64748B]" />
                       <span>Copy Address</span>
                     </>
                   )}
@@ -141,42 +141,42 @@ export const ContactPage: React.FC = () => {
             </div>
 
             {/* Phone & Inquiries Card */}
-            <div className="bg-[#151922] border border-[#232938] p-6 sm:p-8 rounded-xl flex flex-col gap-4">
-              <span className="text-xs uppercase tracking-widest text-[#d4af37] font-semibold flex items-center gap-1.5">
-                <Phone className="w-4 h-4 text-[#d4af37]" />
+            <div className="bg-[#F1F5F9] border border-[#E2E8F0] p-6 sm:p-8 rounded-xl flex flex-col gap-4">
+              <span className="text-xs uppercase tracking-widest text-[#2563EB] font-semibold flex items-center gap-1.5">
+                <Phone className="w-4 h-4 text-[#2563EB]" />
                 <span>Telephone Orders &amp; Reservations</span>
               </span>
 
               <div>
                 <a
                   href={`tel:${RESTAURANT_INFO.phoneRaw}`}
-                  className="font-mono text-2xl font-bold text-white hover:text-[#d4af37] transition-colors tabular-nums block"
+                  className="font-mono text-2xl font-bold text-[#1E40AF] hover:text-[#2563EB] transition-colors tabular-nums block"
                 >
                   (972) 243-0434
                 </a>
-                <p className="text-xs text-[#9aa2b2] mt-1.5 leading-relaxed">
+                <p className="text-xs text-[#64748B] mt-1.5 leading-relaxed">
                   Direct line for table inquiries, lunch bento orders, party takeout platters, and daily special inquiries.
                 </p>
               </div>
             </div>
 
             {/* Operating Hours Table */}
-            <div className="bg-[#151922] border border-[#232938] p-6 sm:p-8 rounded-xl flex flex-col gap-4">
-              <span className="text-xs uppercase tracking-widest text-[#d4af37] font-semibold flex items-center gap-1.5">
-                <Clock className="w-4 h-4 text-[#d4af37]" />
+            <div className="bg-[#F1F5F9] border border-[#E2E8F0] p-6 sm:p-8 rounded-xl flex flex-col gap-4">
+              <span className="text-xs uppercase tracking-widest text-[#2563EB] font-semibold flex items-center gap-1.5">
+                <Clock className="w-4 h-4 text-[#2563EB]" />
                 <span>Verified Operating Hours</span>
               </span>
 
-              <div className="divide-y divide-[#1e2330] text-xs">
+              <div className="divide-y divide-[#E2E8F0] text-xs">
                 {RESTAURANT_INFO.hours.map((h) => (
                   <div key={h.day} className="py-2.5 flex items-center justify-between">
-                    <span className="font-medium text-[#e6e2d8]">{h.day}</span>
-                    <span className="text-[#a2aab8] font-mono tabular-nums">{h.full}</span>
+                    <span className="font-medium text-[#1E293B]">{h.day}</span>
+                    <span className="text-[#64748B] font-mono tabular-nums">{h.full}</span>
                   </div>
                 ))}
               </div>
 
-              <div className="pt-2 text-[11px] text-[#717a8c] leading-relaxed">
+              <div className="pt-2 text-[11px] text-[#64748B] leading-relaxed">
                 * Lunch specials available daily 11:00 AM – 3:00 PM. Dinner menu served all day.
               </div>
             </div>
@@ -185,24 +185,24 @@ export const ContactPage: React.FC = () => {
           {/* Right Column (7 cols): Interactive Map & Contact Form */}
           <div className="lg:col-span-7 flex flex-col gap-6">
             {/* Interactive Google Map Embed Frame */}
-            <div className="bg-[#151922] border border-[#232938] rounded-xl overflow-hidden shadow-lg flex flex-col">
-              <div className="px-6 py-4 border-b border-[#212635] flex items-center justify-between">
+            <div className="bg-[#F1F5F9] border border-[#E2E8F0] rounded-xl overflow-hidden shadow-lg flex flex-col">
+              <div className="px-6 py-4 border-b border-[#E2E8F0] flex items-center justify-between">
                 <div className="flex items-center gap-2 text-xs text-[#c0c7d6]">
-                  <MapPin className="w-4 h-4 text-[#d4af37]" />
+                  <MapPin className="w-4 h-4 text-[#2563EB]" />
                   <span className="font-medium">Map: 2598 Royal Ln, Dallas, TX 75229</span>
                 </div>
                 <a
                   href={RESTAURANT_INFO.googleMapsDirectionsUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-xs font-semibold text-[#d4af37] hover:underline flex items-center gap-1"
+                  className="text-xs font-semibold text-[#2563EB] hover:underline flex items-center gap-1"
                 >
                   <span>Open Full Map</span>
                   <ExternalLink className="w-3 h-3" />
                 </a>
               </div>
 
-              <div className="relative w-full h-[320px] bg-[#1a1e28]">
+              <div className="relative w-full h-[320px] bg-[#EFF6FF]">
                 <iframe
                   title="Korea House Dallas Google Maps Location"
                   src="https://maps.google.com/maps?q=2598+Royal+Lane,+Dallas,+TX+75229&t=&z=15&ie=UTF8&iwloc=&output=embed"
@@ -217,15 +217,15 @@ export const ContactPage: React.FC = () => {
             </div>
 
             {/* Contact & Inquiry Form */}
-            <div className="bg-[#151922] border border-[#232938] p-6 sm:p-8 rounded-xl flex flex-col gap-5">
+            <div className="bg-[#F1F5F9] border border-[#E2E8F0] p-6 sm:p-8 rounded-xl flex flex-col gap-5">
               <div>
-                <span className="text-xs uppercase tracking-widest text-[#d4af37] font-semibold">
+                <span className="text-xs uppercase tracking-widest text-[#2563EB] font-semibold">
                   Get In Touch
                 </span>
-                <h3 className="font-serif text-2xl font-bold text-white mt-1">
+                <h3 className="font-serif text-2xl font-bold text-[#0F172A] mt-1">
                   Send a Message or Catering Inquiry
                 </h3>
-                <p className="text-xs text-[#9aa2b2] mt-1 leading-relaxed">
+                <p className="text-xs text-[#64748B] mt-1 leading-relaxed">
                   Have a question about large group bookings, private events, or dietary needs? Send us a note below.
                 </p>
               </div>
@@ -266,8 +266,8 @@ export const ContactPage: React.FC = () => {
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
-                      <label className="block text-xs font-medium text-[#c0c7d6] mb-1.5">
-                        Your Name <span className="text-[#ff7b7b]">*</span>
+                      <label className="block text-sm font-medium text-[#475569] mb-1.5">
+                        Your Name <span className="text-[#FB923C]">*</span>
                       </label>
                       <input
                         type="text"
@@ -275,13 +275,13 @@ export const ContactPage: React.FC = () => {
                         value={formData.name}
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                         placeholder="e.g. Min-Jun Park"
-                        className="w-full px-3.5 py-2.5 bg-[#181d28] border border-[#2b3346] rounded-md text-sm text-white placeholder-[#636d80] focus:outline-none focus:border-[#d4af37]"
+                        className="w-full px-3.5 py-2.5 bg-[#FFFFFF] border border-[#2b3346] rounded-md text-sm text-[#0F172A] placeholder-[#94A3B8] focus:outline-none focus:border-[#2563EB]"
                       />
                     </div>
 
                     <div>
-                      <label className="block text-xs font-medium text-[#c0c7d6] mb-1.5">
-                        Email Address <span className="text-[#ff7b7b]">*</span>
+                      <label className="block text-sm font-medium text-[#475569] mb-1.5">
+                        Email Address <span className="text-[#FB923C]">*</span>
                       </label>
                       <input
                         type="email"
@@ -289,33 +289,33 @@ export const ContactPage: React.FC = () => {
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                         placeholder="name@example.com"
-                        className="w-full px-3.5 py-2.5 bg-[#181d28] border border-[#2b3346] rounded-md text-sm text-white placeholder-[#636d80] focus:outline-none focus:border-[#d4af37]"
+                        className="w-full px-3.5 py-2.5 bg-[#FFFFFF] border border-[#2b3346] rounded-md text-sm text-[#0F172A] placeholder-[#94A3B8] focus:outline-none focus:border-[#2563EB]"
                       />
                     </div>
                   </div>
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
-                      <label className="block text-xs font-medium text-[#c0c7d6] mb-1.5">
-                        Phone Number <span className="text-[#758092]">(Optional)</span>
+                      <label className="block text-sm font-medium text-[#475569] mb-1.5">
+                        Phone Number <span className="text-[#64748B]">(Optional)</span>
                       </label>
                       <input
                         type="tel"
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                         placeholder="(972) 000-0000"
-                        className="w-full px-3.5 py-2.5 bg-[#181d28] border border-[#2b3346] rounded-md text-sm text-white placeholder-[#636d80] focus:outline-none focus:border-[#d4af37]"
+                        className="w-full px-3.5 py-2.5 bg-[#FFFFFF] border border-[#2b3346] rounded-md text-sm text-[#0F172A] placeholder-[#94A3B8] focus:outline-none focus:border-[#2563EB]"
                       />
                     </div>
 
                     <div>
-                      <label className="block text-xs font-medium text-[#c0c7d6] mb-1.5">
+                      <label className="block text-sm font-medium text-[#475569] mb-1.5">
                         Inquiry Topic
                       </label>
                       <select
                         value={formData.subject}
                         onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-                        className="w-full px-3.5 py-2.5 bg-[#181d28] border border-[#2b3346] rounded-md text-sm text-white focus:outline-none focus:border-[#d4af37]"
+                        className="w-full px-3.5 py-2.5 bg-[#FFFFFF] border border-[#2b3346] rounded-md text-sm text-white focus:outline-none focus:border-[#2563EB]"
                       >
                         <option value="General Inquiry">General Inquiry</option>
                         <option value="Group Reservation">Group Reservation</option>
@@ -327,7 +327,7 @@ export const ContactPage: React.FC = () => {
 
                   <div>
                     <label className="block text-xs font-medium text-[#c0c7d6] mb-1.5">
-                      Message <span className="text-[#ff7b7b]">*</span>
+                      Message <span className="text-[#FB923C]">*</span>
                     </label>
                     <textarea
                       required
@@ -335,7 +335,7 @@ export const ContactPage: React.FC = () => {
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                       placeholder="Please let us know how we can help..."
-                      className="w-full px-3.5 py-2.5 bg-[#181d28] border border-[#2b3346] rounded-md text-sm text-white placeholder-[#636d80] focus:outline-none focus:border-[#d4af37] resize-none"
+                      className="w-full px-3.5 py-2.5 bg-[#FFFFFF] border border-[#2b3346] rounded-md text-sm text-[#0F172A] placeholder-[#94A3B8] focus:outline-none focus:border-[#2563EB] resize-none"
                     />
                   </div>
 
@@ -343,12 +343,12 @@ export const ContactPage: React.FC = () => {
                     <button
                       type="submit"
                       disabled={formStatus === 'submitting'}
-                      className="w-full sm:w-auto px-7 py-3 bg-[#9e2a2b] hover:bg-[#b03032] disabled:opacity-50 text-white font-semibold text-xs uppercase tracking-wider rounded-md transition-colors flex items-center justify-center gap-2"
+                      className="w-full sm:w-auto px-7 py-3 bg-[#F97316] hover:bg-[#FB923C] disabled:opacity-50 text-white font-semibold text-xs uppercase tracking-wider rounded-md transition-colors flex items-center justify-center gap-2"
                     >
                       <Send className="w-3.5 h-3.5" />
                       <span>{formStatus === 'submitting' ? 'Submitting...' : 'Submit Message'}</span>
                     </button>
-                    <span className="text-[11px] text-[#717a8c] italic text-center sm:text-right">
+                    <span className="text-[11px] text-[#64748B] italic text-center sm:text-right">
                       *Demo state: For immediate orders call (972) 243-0434.
                     </span>
                   </div>

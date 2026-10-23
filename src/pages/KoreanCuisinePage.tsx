@@ -34,18 +34,19 @@ export const KoreanCuisinePage: React.FC<KoreanCuisinePageProps> = ({ onOpenOrde
           <img
             src={IMAGES.koreanLaGalbiBbq}
             alt="Sizzling Korean LA Galbi short ribs on cast iron with green scallions"
-            className="w-full h-full object-cover object-center filter brightness-[0.4] saturate-[1.1]"
+            className="hero-photo"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0f1115] via-[#0f1115]/50 to-black/70" />
+          <div className="hero-overlay" />
+          <div className="hero-overlay-soft" />
         </div>
 
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center flex flex-col items-center">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#9e2a2b]/30 border border-[#9e2a2b]/50 backdrop-blur-md mb-4 text-[#ff9999] text-xs font-semibold uppercase tracking-widest">
-            <Flame className="w-3.5 h-3.5 text-[#ff8080]" />
+          <div className="hero-badge mb-4">
+            <Flame className="w-4 h-4 text-[#F97316]" />
             <span>Culinary Heritage Since 1979</span>
           </div>
 
-          <h1 className="font-serif text-3xl sm:text-5xl md:text-6xl font-bold text-white tracking-tight leading-tight">
+          <h1 className="hero-title font-serif text-3xl sm:text-5xl md:text-6xl font-bold tracking-tight leading-tight">
             The Soul of Authentic Korean Cuisine
           </h1>
 
@@ -56,7 +57,7 @@ export const KoreanCuisinePage: React.FC<KoreanCuisinePageProps> = ({ onOpenOrde
           <div className="mt-8 flex flex-wrap gap-4 justify-center">
             <Link
               to="/menu"
-              className="px-6 py-3 bg-[#9e2a2b] hover:bg-[#b03032] text-white text-xs font-semibold uppercase tracking-wider rounded-md transition-colors flex items-center gap-2"
+              className="px-6 py-3 bg-[#F97316] hover:bg-[#FB923C] text-white text-xs font-semibold uppercase tracking-wider rounded-md transition-colors flex items-center gap-2"
             >
               <span>View Full Korean Menu</span>
               <ArrowRight className="w-4 h-4" />
@@ -69,27 +70,27 @@ export const KoreanCuisinePage: React.FC<KoreanCuisinePageProps> = ({ onOpenOrde
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="flex flex-col gap-5">
-            <span className="text-xs uppercase tracking-[0.25em] text-[#d4af37] font-semibold">
+            <span className="text-xs uppercase tracking-[0.25em] text-[#2563EB] font-semibold">
               The Flavor Foundation
             </span>
-            <h2 className="font-serif text-3xl sm:text-4xl font-bold text-white tracking-tight">
+            <h2 className="page-heading text-3xl sm:text-4xl tracking-tight">
               A Balance of Fire, Fermentation, and Harmony
             </h2>
-            <p className="text-sm sm:text-base text-[#9aa2b2] leading-relaxed">
+            <p className="text-sm sm:text-base text-[#64748B] leading-relaxed">
               At Korea House, every recipe begins with fundamental Korean pantry pillars: slow-fermented doenjang (soybean paste), vibrant gochujang (chili pepper paste), toasted dark sesame oil, crushed garlic, and aged kimchi.
             </p>
-            <p className="text-sm sm:text-base text-[#9aa2b2] leading-relaxed">
+            <p className="text-sm sm:text-base text-[#64748B] leading-relaxed">
               For more than four decades, Dallas families have gathered around our tables for authentic warmth — from our signature caramelized LA Galbi short ribs marinated in fresh Asian pears and aged soy sauce to restorative bowls of Galbi Tang.
             </p>
 
-            <div className="grid grid-cols-2 gap-4 pt-3 border-t border-[#1d222e]">
+            <div className="grid grid-cols-2 gap-4 pt-3 border-t border-[#E2E8F0]">
               <div>
-                <strong className="text-white block text-sm font-semibold">40+ Year Marinade</strong>
-                <span className="text-xs text-[#828a9b]">Slow-steeped fruits, garlic, sesame, and heritage soy sauce.</span>
+                <strong className="text-[#0F172A] block text-sm font-semibold">40+ Year Marinade</strong>
+                <span className="text-xs text-[#64748B]">Slow-steeped fruits, garlic, sesame, and heritage soy sauce.</span>
               </div>
               <div>
-                <strong className="text-white block text-sm font-semibold">Fresh Banchan Assortment</strong>
-                <span className="text-xs text-[#828a9b]">Complimentary house-made seasonal side dishes with entrees.</span>
+                <strong className="text-[#0F172A] block text-sm font-semibold">Fresh Banchan Assortment</strong>
+                <span className="text-xs text-[#64748B]">Complimentary house-made seasonal side dishes with entrees.</span>
               </div>
             </div>
           </div>
@@ -101,7 +102,7 @@ export const KoreanCuisinePage: React.FC<KoreanCuisinePageProps> = ({ onOpenOrde
               className="w-full aspect-[4/3] object-cover"
             />
             <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 to-transparent p-5 text-xs text-[#d8dfed]">
-              <span className="text-[#d4af37] font-semibold block text-sm">Dolsot Bibimbap (돌솥 비빔밥)</span>
+              <span className="text-[#2563EB] font-semibold block text-sm">Dolsot Bibimbap (돌솥 비빔밥)</span>
               <span>Sizzling stone bowl that creates crispy golden toasted rice with seasoned namul.</span>
             </div>
           </div>
@@ -109,25 +110,25 @@ export const KoreanCuisinePage: React.FC<KoreanCuisinePageProps> = ({ onOpenOrde
       </section>
 
       {/* 3. Sizzling Korean BBQ Section */}
-      <section className="py-16 bg-[#12151d] border-y border-[#1d222e]">
+      <section className="py-16 bg-[#EFF6FF] border-y border-[#E2E8F0]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
             <div>
-              <span className="text-xs uppercase tracking-[0.25em] text-[#d4af37] font-semibold flex items-center gap-1.5">
-                <Flame className="w-3.5 h-3.5 text-[#ff8080]" />
+              <span className="text-xs uppercase tracking-[0.25em] text-[#2563EB] font-semibold flex items-center gap-1.5">
+                <Flame className="w-3.5 h-3.5 text-[#FB923C]" />
                 <span>Grilled to Perfection</span>
               </span>
-              <h2 className="font-serif text-3xl font-bold text-white mt-1">
+              <h2 className="page-heading text-3xl mt-1">
                 Korean BBQ &amp; Sizzling Meats
               </h2>
-              <p className="text-sm text-[#9aa2b2] mt-1 max-w-xl">
+              <p className="text-sm text-[#64748B] mt-1 max-w-xl">
                 Prepared by our master grill cooks over high heat and served piping hot on cast-iron skillets to lock in caramelized juices.
               </p>
             </div>
 
             <Link
               to="/menu"
-              className="text-xs font-semibold text-[#d4af37] hover:underline whitespace-nowrap"
+              className="text-xs font-semibold text-[#2563EB] hover:underline whitespace-nowrap"
             >
               See all BBQ options &rarr;
             </Link>
@@ -138,7 +139,7 @@ export const KoreanCuisinePage: React.FC<KoreanCuisinePageProps> = ({ onOpenOrde
               <FoodCard
                 key={item.id}
                 item={item}
-                onSelect={(selected: MenuItem) => onOpenOrderModal(selected.doordashName ?? selected.name)}
+                onSelect={(selected: MenuItem) => onOpenOrderModal(selected.uberEatsName ?? selected.name)}
               />
             ))}
           </div>
@@ -149,21 +150,21 @@ export const KoreanCuisinePage: React.FC<KoreanCuisinePageProps> = ({ onOpenOrde
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
           <div>
-            <span className="text-xs uppercase tracking-[0.25em] text-[#d4af37] font-semibold flex items-center gap-1.5">
-              <Soup className="w-3.5 h-3.5 text-[#d4af37]" />
+            <span className="text-xs uppercase tracking-[0.25em] text-[#2563EB] font-semibold flex items-center gap-1.5">
+              <Soup className="w-3.5 h-3.5 text-[#2563EB]" />
               <span>Simmered In Earthenware Pots</span>
             </span>
-            <h2 className="font-serif text-3xl font-bold text-white mt-1">
+            <h2 className="page-heading text-3xl mt-1">
               Traditional Soups, Stews &amp; Bibimbap
             </h2>
-            <p className="text-sm text-[#9aa2b2] mt-1 max-w-xl">
+            <p className="text-sm text-[#64748B] mt-1 max-w-xl">
               Nourishing, slow-simmered broths and fiery chili stews served bubbling hot in traditional Korean ttukbaegi crocks.
             </p>
           </div>
 
           <Link
             to="/menu"
-            className="text-xs font-semibold text-[#d4af37] hover:underline whitespace-nowrap"
+            className="text-xs font-semibold text-[#2563EB] hover:underline whitespace-nowrap"
           >
             See all soups &rarr;
           </Link>
@@ -174,24 +175,24 @@ export const KoreanCuisinePage: React.FC<KoreanCuisinePageProps> = ({ onOpenOrde
             <FoodCard
               key={item.id}
               item={item}
-              onSelect={(selected: MenuItem) => onOpenOrderModal(selected.doordashName ?? selected.name)}
+              onSelect={(selected: MenuItem) => onOpenOrderModal(selected.uberEatsName ?? selected.name)}
             />
           ))}
           {riceAndNoodleItems.slice(0, 3).map((item) => (
             <FoodCard
               key={item.id}
               item={item}
-              onSelect={(selected: MenuItem) => onOpenOrderModal(selected.doordashName ?? selected.name)}
+              onSelect={(selected: MenuItem) => onOpenOrderModal(selected.uberEatsName ?? selected.name)}
             />
           ))}
         </div>
       </section>
 
       {/* 5. Korean Pancakes & Appetizers Spotlight */}
-      <section className="py-16 bg-[#11141c] border-t border-[#1d222e]">
+      <section className="py-16 bg-[#EFF6FF] border-t border-[#E2E8F0]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-            <div className="relative rounded-xl overflow-hidden shadow-2xl border border-[#262c3b]">
+            <div className="relative rounded-xl overflow-hidden shadow-2xl border border-[#CBD5E1]">
               <img
                 src={IMAGES.koreanSeafoodPancake}
                 alt="Crisp golden Korean Haemul Pajeon seafood pancake with dipping sauce"
@@ -200,27 +201,27 @@ export const KoreanCuisinePage: React.FC<KoreanCuisinePageProps> = ({ onOpenOrde
             </div>
 
             <div className="flex flex-col gap-4">
-              <span className="text-xs uppercase tracking-[0.25em] text-[#d4af37] font-semibold flex items-center gap-1.5">
-                <Sparkles className="w-3.5 h-3.5 text-[#d4af37]" />
+              <span className="text-xs uppercase tracking-[0.25em] text-[#2563EB] font-semibold flex items-center gap-1.5">
+                <Sparkles className="w-3.5 h-3.5 text-[#2563EB]" />
                 <span>The Perfect Starter</span>
               </span>
-              <h2 className="font-serif text-3xl font-bold text-white">
+              <h2 className="page-heading text-3xl">
                 Crispy Haemul Pajeon &amp; Korean Starters
               </h2>
-              <p className="text-sm text-[#9aa2b2] leading-relaxed">
+              <p className="text-sm text-[#64748B] leading-relaxed">
                 No Korean feast is complete without sharing a sizzling plate of Haemul Pajeon — a golden, crisp scallion pancake laden with tender calamari, shrimp, and aromatic green onions, paired with our tangy soy-chili dipping sauce.
               </p>
-              <div className="pt-2 flex flex-col gap-2 text-xs text-[#a2aab8]">
+              <div className="pt-2 flex flex-col gap-2 text-xs text-[#64748B]">
                 <div className="flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#d4af37]" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#2563EB]" />
                   <span><strong>Gun Mandu:</strong> Pan-crisped handmade pork &amp; vegetable dumplings ($8.99)</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#d4af37]" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#2563EB]" />
                   <span><strong>Dukbokki:</strong> Spicy chewy rice cakes in rich gochujang chili sauce ($13.99)</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#d4af37]" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#2563EB]" />
                   <span><strong>Kimchi Pajeon:</strong> Tangy, crispy aged kimchi pancake ($13.99)</span>
                 </div>
               </div>
@@ -228,7 +229,7 @@ export const KoreanCuisinePage: React.FC<KoreanCuisinePageProps> = ({ onOpenOrde
               <div className="pt-4">
                 <Link
                   to="/menu"
-                  className="inline-flex items-center gap-2 px-6 py-3 bg-[#9e2a2b] hover:bg-[#b03032] text-white text-xs font-semibold rounded-md transition-colors"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-[#F97316] hover:bg-[#FB923C] text-white text-xs font-semibold rounded-md transition-colors"
                 >
                   <Utensils className="w-4 h-4" />
                   <span>Explore All Appetizers</span>

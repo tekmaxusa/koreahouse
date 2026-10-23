@@ -51,7 +51,7 @@ export const LightboxModal: React.FC<LightboxModalProps> = ({
       {/* Close button */}
       <button
         onClick={onClose}
-        className="absolute top-4 right-4 p-2 text-white/80 hover:text-white bg-white/10 hover:bg-white/20 rounded-full transition-colors z-20"
+        className="absolute top-4 right-4 p-2 text-white/80 hover:text-[#1E40AF] bg-white/10 hover:bg-white/20 rounded-full transition-colors z-20"
         aria-label="Close lightbox"
       >
         <X className="w-6 h-6" />
@@ -60,7 +60,7 @@ export const LightboxModal: React.FC<LightboxModalProps> = ({
       {/* Prev button */}
       <button
         onClick={handlePrev}
-        className="absolute left-4 top-1/2 -translate-y-1/2 p-2.5 text-white/80 hover:text-white bg-white/10 hover:bg-white/20 rounded-full transition-colors z-20"
+        className="absolute left-4 top-1/2 -translate-y-1/2 p-2.5 text-white/80 hover:text-[#1E40AF] bg-white/10 hover:bg-white/20 rounded-full transition-colors z-20"
         aria-label="Previous image"
       >
         <ChevronLeft className="w-6 h-6" />
@@ -69,7 +69,7 @@ export const LightboxModal: React.FC<LightboxModalProps> = ({
       {/* Next button */}
       <button
         onClick={handleNext}
-        className="absolute right-4 top-1/2 -translate-y-1/2 p-2.5 text-white/80 hover:text-white bg-white/10 hover:bg-white/20 rounded-full transition-colors z-20"
+        className="absolute right-4 top-1/2 -translate-y-1/2 p-2.5 text-white/80 hover:text-[#1E40AF] bg-white/10 hover:bg-white/20 rounded-full transition-colors z-20"
         aria-label="Next image"
       >
         <ChevronRight className="w-6 h-6" />
@@ -86,16 +86,16 @@ export const LightboxModal: React.FC<LightboxModalProps> = ({
         </div>
 
         <div className="mt-4 text-center max-w-2xl px-4">
-          <span className="text-xs uppercase tracking-widest text-[#d4af37] font-semibold">
+          <span className="text-xs uppercase tracking-widest text-[#2563EB] font-semibold">
             {item.category}
           </span>
           <h3 className="font-serif text-xl sm:text-2xl font-bold text-white mt-1">
             {item.title}
           </h3>
-          <p className="text-sm text-[#a2aab8] mt-1 leading-relaxed">
+          <p className="text-sm text-[#64748B] mt-1 leading-relaxed">
             {item.description}
           </p>
-          <div className="text-xs text-[#6e7787] mt-2">
+          <div className="text-xs text-[#64748B] mt-2">
             Image {currentIndex + 1} of {items.length}
           </div>
         </div>
