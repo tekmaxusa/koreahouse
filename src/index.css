@@ -1,16 +1,5 @@
 @import "tailwindcss";
 
-@theme {
-  --color-brand-blue: #1e40af;
-  --color-brand-blue-dark: #1e3a8a;
-  --color-brand-blue-light: #eff6ff;
-  --color-brand-orange: #f97316;
-  --color-brand-orange-dark: #ea580c;
-  --color-brand-orange-light: #fff7ed;
-  --color-brand-surface: #ffffff;
-  --color-brand-muted: #64748b;
-}
-
 @layer base {
   :root {
     --font-serif: 'Playfair Display', Georgia, serif;
@@ -25,10 +14,8 @@
   body {
     overflow-x: clip;
     font-family: var(--font-sans);
-    font-size: 1.0625rem;
-    line-height: 1.6;
-    background-color: #ffffff;
-    color: #0f172a;
+    background-color: #0f1115;
+    color: #f2efe9;
     padding-left: env(safe-area-inset-left);
     padding-right: env(safe-area-inset-right);
   }
@@ -58,48 +45,14 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f5f9;
+  background: #14171f;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #93c5fd;
+  background: #2a303c;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #3b82f6;
-}
-
-@layer utilities {
-  .hero-photo {
-    @apply w-full h-full object-cover object-center brightness-[0.78] saturate-[1.08];
-  }
-
-  .hero-overlay {
-    @apply absolute inset-0 bg-gradient-to-b from-[#1E3A8A]/45 via-[#1E40AF]/10 to-[#1E3A8A]/70;
-  }
-
-  .hero-overlay-soft {
-    @apply absolute inset-0 bg-black/15;
-  }
-
-  .hero-title {
-    @apply text-white drop-shadow-[0_2px_16px_rgba(0,0,0,0.85)];
-  }
-
-  .hero-lead {
-    @apply text-white/95 drop-shadow-[0_1px_10px_rgba(0,0,0,0.7)];
-  }
-
-  .hero-badge {
-    @apply inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/90 border border-white/80 backdrop-blur-md text-[#1E40AF] text-sm font-semibold uppercase tracking-wider;
-  }
-
-  .page-heading {
-    @apply font-serif font-bold text-[#1E40AF];
-  }
-
-  .page-subheading {
-    @apply text-[#475569] text-base sm:text-lg leading-relaxed;
-  }
+  background: #3c4454;
 }

@@ -39,7 +39,7 @@ export default function App() {
   return (
     <BrowserRouter basename={import.meta.env.BASE_URL.replace(/\/$/, '') || undefined}>
       <ScrollToTop />
-      <div className="min-h-screen flex flex-col bg-[#FFFFFF] text-[#0F172A]">
+      <div className="min-h-screen flex flex-col bg-[#0f1115] text-[#f2efe9]">
         <Header />
 
         <main className="flex-1 min-w-0 w-full overflow-x-clip">
