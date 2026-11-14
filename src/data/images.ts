@@ -1,4 +1,4 @@
-import heroKoreanBbqSushi from '../assets/images/hero_ubereats_korea_house.jpeg';
+import heroKoreanBbqSushi from '../assets/images/hero_korean_bbq_sushi_1792635194361.jpg';
 import koreanDolsotBibimbap from '../assets/images/korean_dolsot_bibimbap_1792635194705.jpg';
 import koreanLaGalbiBbq from '../assets/images/korean_la_galbi_bbq_1792635195007.jpg';
 import koreanSeafoodPancake from '../assets/images/korean_seafood_pancake_1792635225710.jpg';

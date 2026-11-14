@@ -28,95 +28,118 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenOrderModal }) => {
 
   return (
     <div className="flex flex-col">
-      {/* 1. Hero Section */}
-      <section className="relative min-h-[85vh] lg:min-h-[90vh] flex items-center justify-center overflow-hidden">
-        {/* Background image with calibrated contrast scrim */}
+      {/* 1. Hero Section — Kai Sushi-style bright photo + soft wash + text-shadow */}
+      <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-[#0f1115]">
         <div className="absolute inset-0 z-0">
           <img
             src={IMAGES.heroKoreanBbqSushi}
             alt="Authentic Korean BBQ feast and fresh sushi spread at Korea House Dallas"
-            className="w-full h-full object-cover object-center filter brightness-[0.45] saturate-[1.1]"
+            className="w-full h-full object-cover object-center brightness-[1.15] contrast-[1.05] saturate-[1.06]"
+            style={{ imageRendering: 'auto' }}
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0f1115] via-[#0f1115]/60 to-black/70" />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0f1115]/90 via-transparent to-[#0f1115]/80" />
+          {/* Soft wash keeps food visible; center slightly darker for text contrast */}
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0f1115] via-black/45 to-black/30" />
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(0,0,0,0.45)_0%,transparent_70%)]" />
         </div>
 
-        {/* Hero Content */}
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center flex flex-col items-center">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 backdrop-blur-md mb-6">
-            <span className="w-2 h-2 rounded-full bg-[#d4af37]" />
-            <span className="text-xs uppercase tracking-[0.2em] font-semibold text-[#f5f2eb]">
-              Dallas Koreatown Landmark · Est. 1979
-            </span>
+        <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center flex flex-col items-center">
+          <div className="w-full max-w-4xl rounded-xl bg-black/65 backdrop-blur-md border border-white/15 shadow-[0_20px_60px_rgba(0,0,0,0.65)] px-5 sm:px-10 py-8 sm:py-11 mb-10">
+            <div className="inline-flex items-center space-x-2 px-4 py-1.5 bg-[#111111] border border-[#3a3a3a] mb-8">
+              <span className="w-1.5 h-1.5 bg-[#9e2a2b]" />
+              <span className="text-[10px] font-semibold tracking-[0.25em] text-white uppercase">
+                Dallas Koreatown · Est. 1979
+              </span>
+            </div>
+
+            <div className="flex items-center justify-center space-x-4 mb-4">
+              <span className="h-[1px] w-12 bg-[#9e2a2b]" />
+              <span className="font-serif text-sm text-white tracking-[0.3em]">
+                KOREAN CUISINE &amp; SUSHI
+              </span>
+              <span className="h-[1px] w-12 bg-[#9e2a2b]" />
+            </div>
+
+            <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl font-bold tracking-[0.02em] text-white max-w-4xl mx-auto leading-[1.1] mb-6 drop-shadow-[0_2px_12px_rgba(0,0,0,0.9)]">
+              Authentic Korean Cuisine.{' '}
+              <br className="hidden sm:inline" />
+              <span className="text-[#f0d47e]">Fresh Sushi. Unforgettable Flavor.</span>
+            </h1>
+
+            <p className="text-sm sm:text-lg text-[#f5f2eb] max-w-2xl mx-auto font-normal leading-relaxed mb-10 tracking-wide text-balance">
+              Discover the rich flavors of Korea and the art of Japanese sushi at Korea House Korean Cuisine &amp; Sushi.
+            </p>
+
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">
+              <a
+                href={RESTAURANT_INFO.onlineOrderUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto inline-flex items-center justify-center space-x-3 px-8 py-3.5 text-xs sm:text-sm font-semibold uppercase tracking-[0.2em] text-white bg-[#9e2a2b] hover:bg-[#b03032] shadow-xl shadow-black/50 border border-[#c04040]/40 transition-all duration-300 active:scale-95"
+              >
+                <span>Order Online</span>
+                <ExternalLink className="w-4 h-4" />
+              </a>
+
+              <Link
+                to="/menu"
+                className="w-full sm:w-auto inline-flex items-center justify-center space-x-3 px-8 py-3.5 text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-[#0f1115] bg-[#F2EFE9] hover:bg-white shadow-xl shadow-black/40 transition-all duration-300 active:scale-95"
+              >
+                <Utensils className="w-4 h-4 text-[#9e2a2b]" />
+                <span>Explore Our Menu</span>
+                <ChevronRight className="w-4 h-4" />
+              </Link>
+
+              <a
+                href={RESTAURANT_INFO.googleMapsDirectionsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto inline-flex items-center justify-center space-x-2 px-7 py-3.5 text-xs font-semibold uppercase tracking-[0.2em] text-white bg-[#1a1a1a] hover:bg-[#2a2a2a] border border-white/35 hover:border-white/60 shadow-xl shadow-black/40 transition-all duration-300"
+              >
+                <MapPin className="w-4 h-4 text-[#f0d47e]" />
+                <span>Get Directions</span>
+              </a>
+            </div>
           </div>
 
-          <h1 className="font-serif text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white tracking-tight max-w-4xl leading-[1.15] text-balance">
-            Authentic Korean Cuisine. Fresh Sushi. Unforgettable Flavor.
-          </h1>
-
-          <p className="mt-6 text-base sm:text-lg md:text-xl text-[#d4dae8] max-w-2xl font-normal leading-relaxed">
-            Discover the rich flavors of Korea and the art of Japanese sushi at Korea House Korean Cuisine &amp; Sushi.
-          </p>
-
-          {/* Action CTAs */}
-          <div className="mt-8 sm:mt-10 flex flex-wrap items-center justify-center gap-4">
-            <a
-              href={RESTAURANT_INFO.onlineOrderUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-7 py-3.5 bg-[#9e2a2b] hover:bg-[#b03032] active:bg-[#852324] text-white font-semibold rounded-md shadow-xl shadow-red-950/40 transition-all text-sm tracking-wide whitespace-nowrap flex items-center gap-2 w-full sm:w-auto justify-center"
-            >
-              <span>Order Online</span>
-              <ExternalLink className="w-4 h-4" />
-            </a>
-
-            <Link
-              to="/menu"
-              className="px-7 py-3.5 bg-[#181d28]/90 hover:bg-[#222838] border border-[#333d52] text-[#f2efe9] font-medium rounded-md backdrop-blur-sm transition-all text-sm tracking-wide whitespace-nowrap flex items-center gap-2 w-full sm:w-auto justify-center"
-            >
-              <span>Explore Our Menu</span>
-              <ArrowRight className="w-4 h-4" />
-            </Link>
-
-            <a
-              href={RESTAURANT_INFO.googleMapsDirectionsUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-7 py-3.5 bg-[#181d28]/90 hover:bg-[#222838] border border-[#333d52] text-[#f2efe9] font-medium rounded-md backdrop-blur-sm transition-all text-sm tracking-wide whitespace-nowrap flex items-center gap-2"
-            >
-              <MapPin className="w-4 h-4 text-[#d4af37]" />
-              <span>Get Directions</span>
-            </a>
-          </div>
-
-          {/* Restaurant Quick Information Area */}
-          <div className="mt-12 w-full max-w-3xl grid grid-cols-1 sm:grid-cols-3 gap-4 pt-8 border-t border-white/10 text-left">
-            <div className="flex items-center gap-3 bg-[#131720]/80 backdrop-blur-md p-3.5 rounded-lg border border-[#262c3b]">
-              <MapPin className="w-5 h-5 text-[#d4af37] shrink-0" />
-              <div className="text-xs">
-                <span className="text-[#8e98ab] block">Location</span>
-                <span className="text-[#f5f2eb] font-medium">2598 Royal Ln, Dallas TX</span>
+          <div className="w-full max-w-4xl grid grid-cols-1 sm:grid-cols-3 gap-3 p-4 bg-[#0f1115]/95 backdrop-blur-md border border-white/15 text-left shadow-2xl shadow-black/50">
+            <div className="flex items-start space-x-3 p-2">
+              <div className="p-2 bg-[#9e2a2b]/20 text-[#9e2a2b] shrink-0 mt-0.5 border border-[#9e2a2b]/30">
+                <MapPin className="w-4 h-4" />
+              </div>
+              <div>
+                <p className="text-[10px] font-semibold text-white tracking-[0.15em] uppercase">Location</p>
+                <p className="text-xs text-[#E8E4DC] mt-0.5">2598 Royal Ln, Dallas TX</p>
+                <p className="text-[11px] text-[#B8B0A4]">Dallas Koreatown</p>
               </div>
             </div>
 
-            <div className="flex items-center gap-3 bg-[#131720]/80 backdrop-blur-md p-3.5 rounded-lg border border-[#262c3b]">
-              <Phone className="w-5 h-5 text-[#d4af37] shrink-0" />
-              <div className="text-xs">
-                <span className="text-[#8e98ab] block">Phone Orders</span>
+            <div className="flex items-start space-x-3 p-2 border-t sm:border-t-0 sm:border-l border-[#1A1A1A]">
+              <div className="p-2 bg-[#d4af37]/20 text-[#d4af37] shrink-0 mt-0.5 border border-[#d4af37]/30">
+                <Phone className="w-4 h-4" />
+              </div>
+              <div>
+                <p className="text-[10px] font-semibold text-white tracking-[0.15em] uppercase">Phone</p>
                 <a
                   href={`tel:${RESTAURANT_INFO.phoneRaw}`}
-                  className="text-[#f5f2eb] font-medium hover:text-[#d4af37] transition-colors"
+                  className="text-xs text-white hover:text-[#f0d47e] font-medium block mt-0.5 transition-colors"
                 >
                   (972) 243-0434
                 </a>
+                <p className="text-[11px] text-[#B8B0A4]">Dine-in, Takeout &amp; Inquiries</p>
               </div>
             </div>
 
-            <div className="flex items-center gap-3 bg-[#131720]/80 backdrop-blur-md p-3.5 rounded-lg border border-[#262c3b]">
-              <Clock className="w-5 h-5 text-[#d4af37] shrink-0" />
-              <div className="text-xs">
-                <span className="text-[#8e98ab] block">Operating Hours</span>
-                <span className="text-[#f5f2eb] font-medium">Daily 11:00 AM – 10:00 PM</span>
+            <div className="flex items-start space-x-3 p-2 border-t sm:border-t-0 sm:border-l border-[#1A1A1A]">
+              <div className="p-2 bg-emerald-950/40 text-emerald-400 shrink-0 mt-0.5 border border-emerald-500/30">
+                <Clock className="w-4 h-4" />
+              </div>
+              <div>
+                <div className="flex items-center space-x-1.5">
+                  <p className="text-[10px] font-semibold text-white tracking-[0.15em] uppercase">Hours Today</p>
+                  <span className="inline-block w-1.5 h-1.5 rounded-full bg-emerald-400" />
+                </div>
+                <p className="text-xs text-[#E8E4DC] mt-0.5">Daily 11:00 AM – 10:00 PM</p>
+                <p className="text-[11px] text-[#B8B0A4]">Kitchen closes 30 min prior</p>
               </div>
             </div>
           </div>
