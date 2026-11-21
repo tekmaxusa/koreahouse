@@ -27,6 +27,9 @@ export const RESTAURANT_INFO = {
   googleSearchUrl:
     "https://www.google.com/search?q=Korea+House+Korean+Cuisine+%26+Sushi&kgmid=/g/1vc826dh",
   googleMapsDirectionsUrl: "https://www.google.com/maps/dir/?api=1&destination=2598+Royal+Lane+Dallas+TX+75229",
+  /** Google reviews / leave-a-review via Business Profile. */
+  googleReviewUrl:
+    "https://www.google.com/search?q=Korea+House+Korean+Cuisine+%26+Sushi&kgmid=/g/1vc826dh",
   hours: [
     { day: "Monday", lunch: "11:00 AM – 3:00 PM", dinner: "3:00 PM – 10:00 PM", full: "11:00 AM – 10:00 PM" },
     { day: "Tuesday", lunch: "11:00 AM – 3:00 PM", dinner: "3:00 PM – 10:00 PM", full: "11:00 AM – 10:00 PM" },

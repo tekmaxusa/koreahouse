@@ -50,9 +50,9 @@ export interface MenuItem {
 
 export const MENU_CATEGORIES = [
   "All",
+  "BBQ",
   "Soups",
   "Rice Dishes",
-  "BBQ",
   "Appetizers",
   "Noodles",
   "Chef's Specialties",
@@ -60,6 +60,15 @@ export const MENU_CATEGORIES = [
   "Traditional Korean Dinner",
   "Sushi & Sashimi (Mon-Sat Dinner, Mon-Fri Lunch Only)",
   "Dinners (Serves 2)"
+] as const;
+
+/** Homepage meat highlights requested for non-Korean guest conversion. */
+export const FEATURED_MEAT_DISH_NAMES = [
+  "LA Galbi",
+  "Bulgogi",
+  "Dak Gui",
+  "Spicy Baby Back Ribs",
+  "Yangyum Galbi",
 ] as const;
 
 export const SUSHI_ROLL_CATEGORIES = [
@@ -407,6 +416,7 @@ export const MENU_ITEMS: MenuItem[] = [
     category: "BBQ",
     price: "$34.99",
     description: "Specially marinated pork ribs in spicy and hot chili pepper sauce.",
+    isSignature: true,
     spicyLevel: 2,
     image: img_spicy_baby_back_ribs_22_jpg,
   },
@@ -426,6 +436,7 @@ export const MENU_ITEMS: MenuItem[] = [
     category: "BBQ",
     price: "$33.75",
     description: "Marinated chicken in spicy and sweet sauce.",
+    isSignature: true,
     spicyLevel: 2,
     image: img_dak_gui_24_jpg,
   },
@@ -454,7 +465,8 @@ export const MENU_ITEMS: MenuItem[] = [
     category: "BBQ",
     price: "$53.75",
     description: "Black angus short rib marinated in special sauce.",
-    image: undefined,
+    isSignature: true,
+    image: img_la_galbi_3_jpg,
   },
   {
     id: "ue-saeng-galbi-40",

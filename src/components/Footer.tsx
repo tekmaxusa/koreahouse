@@ -126,6 +126,15 @@ export const Footer: React.FC = () => {
                 <ExternalLink className="w-3.5 h-3.5" />
               </a>
               <a
+                href={RESTAURANT_INFO.googleReviewUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#d4af37] hover:text-[#e4c45b] transition-colors"
+              >
+                <span>Leave a Google Review</span>
+                <ExternalLink className="w-3.5 h-3.5" />
+              </a>
+              <a
                 href={RESTAURANT_INFO.officialWebsite}
                 target="_blank"
                 rel="noopener noreferrer"

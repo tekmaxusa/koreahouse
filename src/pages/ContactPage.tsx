@@ -121,6 +121,15 @@ export const ContactPage: React.FC = () => {
                   <ExternalLink className="w-3.5 h-3.5 text-[#d4af37]" />
                   <span>Get Directions</span>
                 </a>
+                <a
+                  href={RESTAURANT_INFO.googleReviewUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 bg-[#1f2533] hover:bg-[#283144] border border-[#303a4e] text-xs font-semibold text-[#f2efe9] rounded-md transition-colors flex items-center gap-1.5"
+                >
+                  <ExternalLink className="w-3.5 h-3.5 text-[#d4af37]" />
+                  <span>Google Review</span>
+                </a>
                 <button
                   onClick={handleCopyAddress}
                   className="px-4 py-2 bg-[#1a1e28] hover:bg-[#232836] border border-[#2a3244] text-xs font-medium text-[#c0c7d6] rounded-md transition-colors flex items-center gap-1.5"

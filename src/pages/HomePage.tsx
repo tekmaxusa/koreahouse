@@ -14,7 +14,7 @@ import {
 } from 'lucide-react';
 import { RESTAURANT_INFO } from '../data/restaurantInfo';
 import { IMAGES } from '../data/images';
-import { MENU_ITEMS, MenuItem } from '../data/menuData';
+import { FEATURED_MEAT_DISH_NAMES, MENU_ITEMS, MenuItem } from '../data/menuData';
 import { FoodCard } from '../components/FoodCard';
 import { CallToAction } from '../components/CallToAction';
 
@@ -23,8 +23,18 @@ interface HomePageProps {
 }
 
 export const HomePage: React.FC<HomePageProps> = ({ onOpenOrderModal }) => {
-  // Select top signature dishes
-  const signatureDishes = MENU_ITEMS.filter((item) => item.isSignature).slice(0, 6);
+  // Meat dishes first (LA Galbi, Bulgogi, Dak Gui, ribs, Yangnyeom), then other signatures
+  const featuredMeatDishes = FEATURED_MEAT_DISH_NAMES.map((name) =>
+    MENU_ITEMS.find((item) => item.name === name)
+  ).filter((item): item is MenuItem => Boolean(item));
+
+  const otherSignatures = MENU_ITEMS.filter(
+    (item) =>
+      item.isSignature &&
+      !(FEATURED_MEAT_DISH_NAMES as readonly string[]).includes(item.name)
+  );
+
+  const signatureDishes = [...featuredMeatDishes, ...otherSignatures].slice(0, 6);
 
   return (
     <div className="flex flex-col">
@@ -151,10 +161,10 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenOrderModal }) => {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
           <div>
             <span className="text-xs uppercase tracking-[0.25em] text-[#d4af37] font-semibold">
-              Authentic Korean &amp; Sushi Specialties
+              Meat Menu First · Guest Favorites
             </span>
             <h2 className="font-serif text-3xl sm:text-4xl font-bold text-white mt-1">
-              Signature Dishes &amp; Customer Favorites
+              LA Galbi, Bulgogi &amp; Signature Meats
             </h2>
           </div>
           <Link

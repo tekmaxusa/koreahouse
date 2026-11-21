@@ -56,3 +56,69 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #3c4454;
 }
+
+/* Dramatic 3D pop-out for food imagery */
+.food-3d {
+  perspective: 1400px;
+  height: 100%;
+}
+
+.food-3d-inner {
+  transform-style: preserve-3d;
+  transition:
+    transform 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 0.35s ease;
+  will-change: transform;
+  height: 100%;
+}
+
+.food-3d-img {
+  transition: transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .food-3d:hover .food-3d-inner {
+    transform: translateY(-22px) scale(1.045) rotateX(10deg) rotateY(-8deg) translateZ(36px);
+    border-color: #d4af37;
+    box-shadow:
+      0 34px 60px rgba(0, 0, 0, 0.55),
+      0 12px 24px rgba(212, 175, 55, 0.18),
+      0 0 0 1px rgba(212, 175, 55, 0.35);
+  }
+
+  .food-3d:hover .food-3d-img {
+    transform: scale(1.12);
+  }
+}
+
+.food-3d.is-popped .food-3d-inner {
+  transform: translateY(-18px) scale(1.05) rotateX(9deg) rotateY(-7deg) translateZ(40px);
+  border-color: #d4af37;
+  box-shadow:
+    0 32px 56px rgba(0, 0, 0, 0.58),
+    0 10px 22px rgba(212, 175, 55, 0.22),
+    0 0 0 1px rgba(212, 175, 55, 0.4);
+  z-index: 5;
+}
+
+.food-3d.is-popped .food-3d-img {
+  transform: scale(1.12);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .food-3d-inner,
+  .food-3d-img {
+    transition: none !important;
+  }
+
+  .food-3d:hover .food-3d-inner,
+  .food-3d.is-popped .food-3d-inner {
+    transform: none;
+  }
+
+  .food-3d:hover .food-3d-img,
+  .food-3d.is-popped .food-3d-img {
+    transform: none;
+  }
+}

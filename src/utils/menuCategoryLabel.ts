@@ -3,7 +3,7 @@ const SHORT_LABELS: Record<string, string> = {
   All: 'All',
   Appetizers: 'Appetizers',
   Soups: 'Soups',
-  BBQ: 'BBQ',
+  BBQ: 'Meat',
   Noodles: 'Noodles',
   'Rice Dishes': 'Rice',
   'Grilled Fishes': 'Grilled Fish',
@@ -17,6 +17,9 @@ const SHORT_LABELS: Record<string, string> = {
 };
 
 export function menuCategoryLabel(category: string, variant: 'short' | 'full' = 'short'): string {
+  if (category === 'BBQ') {
+    return variant === 'full' ? 'Meat · Korean BBQ' : 'Meat';
+  }
   if (variant === 'full') return category;
   return SHORT_LABELS[category] ?? category.replace(/\s*\(Mon.*$/i, '').trim();
 }

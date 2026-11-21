@@ -1,5 +1,5 @@
-import React, { useState, useMemo } from 'react';
-import { Search, Phone, Filter, X, UtensilsCrossed } from 'lucide-react';
+import React, { useState, useMemo, useRef, useEffect, useCallback } from 'react';
+import { Search, Phone, Filter, X, UtensilsCrossed, ChevronLeft, ChevronRight } from 'lucide-react';
 import { MENU_ITEMS, MENU_CATEGORIES, MenuItem } from '../data/menuData';
 import { RESTAURANT_INFO } from '../data/restaurantInfo';
 import { FoodCard } from '../components/FoodCard';
@@ -15,6 +15,42 @@ export const MenuPage: React.FC<MenuPageProps> = ({ onOpenOrderModal }) => {
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [spicyOnly, setSpicyOnly] = useState<boolean>(false);
   const [signatureOnly, setSignatureOnly] = useState<boolean>(false);
+  const [canScrollLeft, setCanScrollLeft] = useState(false);
+  const [canScrollRight, setCanScrollRight] = useState(false);
+  const categoryScrollRef = useRef<HTMLDivElement>(null);
+
+  const updateCategoryScrollState = useCallback(() => {
+    const el = categoryScrollRef.current;
+    if (!el) return;
+    const maxScroll = el.scrollWidth - el.clientWidth;
+    setCanScrollLeft(el.scrollLeft > 4);
+    setCanScrollRight(el.scrollLeft < maxScroll - 4);
+  }, []);
+
+  useEffect(() => {
+    const el = categoryScrollRef.current;
+    if (!el) return;
+
+    updateCategoryScrollState();
+    el.addEventListener('scroll', updateCategoryScrollState, { passive: true });
+    window.addEventListener('resize', updateCategoryScrollState);
+
+    const observer = typeof ResizeObserver !== 'undefined' ? new ResizeObserver(updateCategoryScrollState) : null;
+    observer?.observe(el);
+
+    return () => {
+      el.removeEventListener('scroll', updateCategoryScrollState);
+      window.removeEventListener('resize', updateCategoryScrollState);
+      observer?.disconnect();
+    };
+  }, [updateCategoryScrollState]);
+
+  const scrollCategories = (direction: 'left' | 'right') => {
+    const el = categoryScrollRef.current;
+    if (!el) return;
+    const amount = Math.max(220, Math.floor(el.clientWidth * 0.65));
+    el.scrollBy({ left: direction === 'left' ? -amount : amount, behavior: 'smooth' });
+  };
 
   // Filter menu items
   const filteredItems = useMemo(() => {
@@ -155,25 +191,59 @@ export const MenuPage: React.FC<MenuPageProps> = ({ onOpenOrderModal }) => {
             </div>
           </div>
 
-          {/* Interactive Category Tabs (Segmented functional buttons) */}
-          <div className="flex items-center gap-1.5 overflow-x-auto pb-1 -mx-1 px-1 snap-x snap-mandatory scrollbar-none text-sm max-w-full">
-            {MENU_CATEGORIES.map((cat) => {
-              const isActive = activeCategory === cat;
-              return (
-                <button
-                  key={cat}
-                  onClick={() => setActiveCategory(cat)}
-                  title={cat}
-                  className={`px-3.5 sm:px-4 py-2.5 rounded-md font-medium whitespace-nowrap shrink-0 snap-start transition-all ${
-                    isActive
-                      ? 'bg-[#d4af37] text-black font-semibold shadow-md'
-                      : 'bg-[#151922] text-[#9aa2b2] hover:text-white hover:bg-[#1f2533] border border-[#232938]'
-                  }`}
-                >
-                  {menuCategoryLabel(cat)}
-                </button>
-              );
-            })}
+          {/* Interactive Category Tabs with scroll arrows */}
+          <div className="relative flex items-center gap-2 max-w-full">
+            <button
+              type="button"
+              onClick={() => scrollCategories('left')}
+              disabled={!canScrollLeft}
+              aria-label="Scroll categories left"
+              className={`shrink-0 w-9 h-9 rounded-md border flex items-center justify-center transition-colors ${
+                canScrollLeft
+                  ? 'bg-[#151922] border-[#d4af37]/50 text-[#d4af37] hover:bg-[#1f2533] hover:border-[#d4af37]'
+                  : 'bg-[#12151c] border-[#232938] text-[#4a5160] cursor-not-allowed'
+              }`}
+            >
+              <ChevronLeft className="w-5 h-5" />
+            </button>
+
+            <div
+              ref={categoryScrollRef}
+              className="flex-1 min-w-0 flex items-center gap-1.5 overflow-x-auto pb-1 snap-x snap-mandatory scrollbar-none text-sm"
+            >
+              {MENU_CATEGORIES.map((cat) => {
+                const isActive = activeCategory === cat;
+                return (
+                  <button
+                    key={cat}
+                    type="button"
+                    onClick={() => setActiveCategory(cat)}
+                    title={cat}
+                    className={`px-3.5 sm:px-4 py-2.5 rounded-md font-medium whitespace-nowrap shrink-0 snap-start transition-all ${
+                      isActive
+                        ? 'bg-[#d4af37] text-black font-semibold shadow-md'
+                        : 'bg-[#151922] text-[#9aa2b2] hover:text-white hover:bg-[#1f2533] border border-[#232938]'
+                    }`}
+                  >
+                    {menuCategoryLabel(cat)}
+                  </button>
+                );
+              })}
+            </div>
+
+            <button
+              type="button"
+              onClick={() => scrollCategories('right')}
+              disabled={!canScrollRight}
+              aria-label="Scroll categories right"
+              className={`shrink-0 w-9 h-9 rounded-md border flex items-center justify-center transition-colors ${
+                canScrollRight
+                  ? 'bg-[#151922] border-[#d4af37]/50 text-[#d4af37] hover:bg-[#1f2533] hover:border-[#d4af37]'
+                  : 'bg-[#12151c] border-[#232938] text-[#4a5160] cursor-not-allowed'
+              }`}
+            >
+              <ChevronRight className="w-5 h-5" />
+            </button>
           </div>
         </div>
       </section>
